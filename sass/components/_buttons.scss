@@ -1,0 +1,15 @@
+.btn-exploration {
+    width:30%;       
+    @include btn;    
+    margin-bottom:1.5em;
+    margin-top: 1.5em;
+    @include mobile {
+        width:60%;
+    }
+
+}
+
+.btn-exploration p{
+    align-self:center;
+    color:white;
+}

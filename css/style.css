@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/***rappel pour import:
+Utils :
+    Variables.
+    Fonctions.
+    Mixins.
+    Placeholders.
+
+Feuilles de style de tiers (vendors) (si vous en avez).
+
+Base. fondations du site font, marge, box sizing,...
+
+Composants.
+
+Layout. (ce qui est réutilisable sur toutes ou plusieurs pages, header, footer,...)
+
+Pages. (code qui ne s'applique qu'a une seule page)
+
+Thèmes. 
+
+****/
+/***
+@function lightness-shift($colour) {
+    @if (lightness($colour) < 25%){
+        @return lighten($colour, 10%);
+    }@else{
+        @return darken($colour, 10%);
+    }
+}
+
+***/
+/***
+
+@mixin btn {
+    padding: $grid-gutter;
+    @include border;
+    color: $colour-primary;
+    background: $colour-secondary;
+    cursor: pointer;
+    &:hover{
+        background: $colour-primary;
+        color: $colour-accent;
+    }
+    &--full-width {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+    ****/
+body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.partie_principal {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@media (max-width: 540px) {
+  div.partie_principal {
+    padding: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  h2 {
+    width: 75%;
+  }
+}
+
+header div p {
+  width: 85%;
+}
+
+div bouton p {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-family : "Roboto", sans-serif;
+@font-family : "Shrikhand", cursive;
+h1 {
+  font-family: "Shrikhand";
+}
+
+html {
+  font-family: "Roboto";
+}
+
+.part1 {
+  display: flex;
+  justify-content: center;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9e3e3;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.localisation {
+  background-color: #c7bfbf;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: center;
+  gap: 1em;
+  height: 3em;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accueil_decouverte {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-exploration {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
+  border-radius: 2em;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+@media (max-width: 540px) {
+  .btn-exploration {
+    width: 60%;
+  }
+}
+
+.btn-exploration p {
+  align-self: center;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
