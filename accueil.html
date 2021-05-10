@@ -28,20 +28,122 @@
             </div>            
         </header>
 
-        <section id="fonctionnement">
+        <section id="fonctionnement" class="alignement">
             <h3>Fonctionnement</h3>
             <div class="container_fonctionnement">
                 <ul>
-                    <li class="choix"><span>Choisissez un restaurant</span></li>
-                    <li class="Composition"><span>Composez Votre menu</span></li>
-                    <li class="degustation"><span>Degustez au restaurant</span></li>
+
+                    <bouton class=btn_fonction_choix><li class="choix">
+                        <span class="position">1</span>
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Choisissez un restaurant</span>
+                    </li>
+                    </bouton>
+                    <bouton class=btn_fonction_composition>
+                    <li class="Composition">
+                        <span class="position">2</span>
+                        <i class="fas fa-list"></i>
+                        <span>Composez votre menu</span>
+                    </li>
+                    </bouton>
+                    <bouton class=btn_fonction_degustation>
+                    <li class="degustation">
+                        <span class="position">3</span>
+                        <i class="fas fa-store"></i>
+                        <span>Degustez au restaurant</span></li>
+                    </bouton>
                 </ul>
             </div>
         </section>
-    
-    
-    
-    
+        <section id="restaurant" class="container_restaurant">
+            <div class="titres-resto">
+                <h4>Restaurants</h4>
+            </div>
+            <div class="box_resto">
+                <div class="box_resto_photo">
+                    <img src="images/restaurants/palette.jpg">
+                </div>
+                <div class="box_resto_nom_lieu_heart">
+                
+                    <div class="box_resto_nom_lieu">
+                        <a href="note_enchantée.html">
+                        <span class="box_resto_nom">La palette du goût</span>
+                        </a>
+                        <span class="box_resto_lieu">Ménilmontant</span>
+                    </div>
+                    <div class="box_resto_heart">
+                    
+                        <i class="far fa-heart" id="unchecked"></i>
+                        <i class="fas fa-heart" id="checked"></i>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="box_resto">
+                <div class="box_resto_photo">
+                    <img src="images/restaurants/enchanté.jpg">
+                </div>
+                <div class="box_resto_nom_lieu_heart">
+                    <div class="box_resto_nom_lieu">
+                        <a href="note_enchantée.html">
+                        <span class="box_resto_nom">La note enchantée</span>
+                        </a>
+                        <span class="box_resto_lieu">Charonne</span>
+                    </div>
+                    <div class="box_resto_heart">
+                        
+                    <i class="far fa-heart" id="unchecked"></i>
+                    <i class="fas fa-heart" id="checked"></i>
+                    </inpu>
+                    </div>
+                </div>
+            </div>
+            <div class="box_resto">
+                <div class="box_resto_photo">
+                    <img src="images/restaurants/française.jpg">
+                </div>
+                <div class="box_resto_nom_lieu_heart">
+                    <div class="box_resto_nom_lieu">
+                        <span class="box_resto_nom">A la française</span>
+                        <span class="box_resto_lieu">Cité Rouge</span>
+                    </div>
+                    <div class="box_resto_heart">
+                        <i class="far fa-heart" id="unchecked"></i>
+                        <i class="fas fa-heart" id="checked"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box_resto">
+                <div class="box_resto_photo">
+                    <img src="images/restaurants/sens.jpg">
+                </div>
+                <div class="box_resto_nom_lieu_heart">
+                    <div class="box_resto_nom_lieu">
+                        <span class="box_resto_nom">Le délice des sens</span>
+                        <span class="box_resto_lieu">Folie-Méricourt</span>
+                    </div>
+                    <div class="box_resto_heart">
+                        <i class="far fa-heart" id="unchecked"></i>
+                        <i class="fas fa-heart" id="checked"></i>
+                    </div>
+                </div>
+            </div>
+        </section>   
     </div>
 </body>
+<footer>
+    <h4>Ohmyfood</h4>
+        <ul class="liste_footer"> 
+            <li>
+                <i class="fas fa-utensils"></i>
+                <p>Proposer un restaurant</p>
+            </li>
+            <li>
+                <i class="fas fa-hands-helping"></i>
+                <p>Devenir partenaire</p>
+            </li>
+            <li><p>Mentions légales</p></li>
+            <li><p>Contact</p></li>
+        </ul>
+</footer>
 </html>

@@ -1,0 +1,19 @@
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1}
+}
+
+
+
+.degustation {
+    animation:fadein 2s;
+
+}
+
+.Composition {
+    animation:fadein 3s;
+    }
+
+.choix {
+    animation: fadein 4s;
+}

@@ -24,3 +24,239 @@
       
 }
 
+.alignement {
+    h3 {
+    box-sizing: border-box;
+    width:95%;
+    align-self:center;
+}
+    ul {    
+    display: flex;
+    flex-direction: column;
+    padding-left:1em;
+    padding-right:0.5em;
+    gap:2em;
+}
+        li {
+    box-sizing: border-box;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    gap:2em;
+    align-items:center;
+    
+}
+}
+
+span.position {
+    border-radius:100%;
+    background-color:$color-primary;
+    height:2em;
+    width:2em;
+    display:flex;
+    align-items:center;
+   justify-content: center;
+    margin-left:-0.9em;  
+}
+
+.container_restaurant {
+    display: flex;
+    flex-direction:column;
+    background: $color-container-primary;
+    align-items: center;
+    margin-top:5em;
+   padding-bottom: 3em;
+    gap:2em;
+
+    .box_resto {
+    box-sizing:border-box;
+    width:80%;    
+    height:15em;
+    display:flex;
+    flex-direction: column;
+    border-radius:1.25em;
+    background: white;
+    &_nom_lieu_heart {
+        display:flex;
+        justify-content: space-between;
+        height:4em;
+    }
+    &_nom_lieu {
+        display: flex;
+        flex-direction: column;
+        padding-left:0.5em;
+        margin-top: 0.5em;
+        gap:0.2em;
+    }
+
+    &_nom {
+        font-weight: bold;        
+    }
+    &_heart {
+        padding-right:1em;
+        align-self:center;
+        font-size:1.5em;
+        @include color-secondary-gradiant;
+        background-clip:text;
+        -webkit-text-fill-color: transparent;     
+    
+    }
+}
+        img {
+             box-sizing:border-box;
+             width:100%;
+             height:11em;
+             object-fit: cover;
+            overflow: hidden;
+             border-radius:1.25em 1.25em 0 0;
+     }
+}
+
+#checked {
+    display:none;
+    
+}
+
+
+
+#unchecked {
+    &:active {
+        display:none;
+    }
+    &:active + #checked{
+        display: block;
+    }
+    
+}
+
+.menu {
+    padding-left:0.6em;
+    box-sizing:border-box;
+    width:100%;  
+    margin-top:-3.4em;
+    border-radius:4.5em 4.5em 0 0;
+    position:absolute;
+    background:$color-container-primary;
+
+}
+
+
+
+.entrée {
+    &_1 {   
+    @include container_menu;      
+        
+    }
+    &_2{   
+        @include container_menu;      
+            
+        }
+    &_3{   
+        @include container_menu;      
+            
+        }
+    &_4 {
+        @include container_menu;   
+    }
+    }
+
+
+.plat {
+    &_1 {   
+        @include container_menu;      
+            
+        }
+        &_2{   
+            @include container_menu;      
+                
+            }
+        &_3{   
+            @include container_menu;      
+                
+            }
+        &_4 {
+            @include container_menu;   
+        }
+        }
+    
+.dessert {
+    &_1 {   
+        @include container_menu;      
+            
+        }
+        &_2{   
+            @include container_menu;      
+                
+            }
+        &_3{   
+            @include container_menu;      
+                
+            }
+        &_4 {
+            @include container_menu;   
+        }
+        }
+
+
+
+.plat {
+
+    &_nom {     
+      font-weight:bold;     
+            
+    }
+
+    &_commentaire {
+        margin-top:0.3em; 
+        white-space: nowrap;    
+        
+    }
+    
+    &_tarif {
+      transform:translate(100%);
+      margin-right:0;
+      padding-right:1em;
+      font-weight: bold;     
+      margin-top:2em;
+      transform-origin:right;
+      transition: transform 200ms ease-in;
+     
+    }
+    &_box_achat {
+    
+    width:4em;
+    height:4em;
+    background-color:$color-tertiary ;
+    color:$color-tertiary;    
+    display:flex;
+    align-items:center;
+    justify-content: center;   
+    border-radius:0 1.25em 1.25em 0;   
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform 200ms ease-in;
+    i {
+        font-size:2em;  
+       color:white;
+      
+    }
+}
+      
+}
+
+.part_nom_commentaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.part_tarif_box_achat {
+    display:flex;
+    flex-direction: row;
+}
+
+
+    
+
+   
+
+

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-family : "Roboto", sans-serif;
 @font-family : "Shrikhand", cursive;
 
@@ -10,17 +9,4 @@ h1 {
 
 html {
     font-family:map-get($font-family, text )
-=======
-@font-family : "Roboto", sans-serif;
-@font-family : "Shrikhand", cursive;
-
-h1 {
-    font-family:map-get($font-family, title )
-}
-
-
-
-html {
-    font-family:map-get($font-family, text )
->>>>>>> 2ee6a003830a04e3f3e8e9ef7281e2d90fd13b0f
 }

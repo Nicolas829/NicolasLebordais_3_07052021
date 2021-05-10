@@ -1,5 +1,6 @@
 .btn-exploration {
-    width:30%;       
+    width:30%;  
+    box-shadow: 0em 0.1em 0.5em ;
     @include btn;    
     margin-bottom:1.5em;
     margin-top: 1.5em;
@@ -13,3 +14,30 @@
     align-self:center;
     color:white;
 }
+
+.btn_fonction {
+
+    &_choix {
+        @include container_fonctionnement;
+        animation: fadein 4s;
+            }
+
+    &_composition {
+        @include container_fonctionnement;
+        animation: fadein 3s;            
+            
+    }
+
+    &_degustation {
+        @include container_fonctionnement;
+        animation: fadein 2s;
+        
+    }
+       
+    
+}
+
+.far fa-heart {
+    @include color-secondary-gradiant;
+}
+

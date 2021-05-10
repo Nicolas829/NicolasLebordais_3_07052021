@@ -32,6 +32,44 @@ div bouton p {
 }
 
 a {
-  text-decoration: none;
-    
+  text-decoration: none; 
+ 
+  &:visited {
+    color:black;
+
+  }
 }
+
+ul {
+  list-style: none; 
+}
+
+.position {
+  color:white;
+}
+
+h5 {
+  display:flex;
+  justify-content: space-between;
+  margin-right:2em;
+  font-family: "shrikhand";
+  
+  font-size:1.6em;
+}
+h6 {
+  font-size:1.2em;
+  font-weight:lighter;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;  
+ 
+ 
+}
+
+.trait_couleur {
+  border-top:solid;
+  width:3em;
+  margin-top:-1em;
+  margin-bottom:1.5em;
+  color:$color-tertiary;
+}
+
