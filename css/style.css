@@ -61,6 +61,7 @@ div bouton p {
 
 a {
   text-decoration: none;
+  color: black;
 }
 a:visited {
   color: black;
@@ -690,14 +691,6 @@ div.commande {
 }
 .btn-exploration:active {
   transform: scale(1.05);
-}
-
-div.commande {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5em;
-  background: #e9e3e3;
-  margin-top: 5em;
 }
 
 .btn-cmd {
