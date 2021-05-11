@@ -59,6 +59,8 @@ span.position {
     margin-left:-0.9em;  
 }
 
+/***page d'accueil liste des restaurant***/
+
 .container_restaurant {
     display: flex;
     flex-direction:column;
@@ -70,7 +72,7 @@ span.position {
 
     .box_resto {
     box-sizing:border-box;
-    width:80%;    
+    width:90%;    
     height:15em;
     display:flex;
     flex-direction: column;
@@ -116,9 +118,6 @@ span.position {
     display:none;
     
 }
-
-
-
 #unchecked {
     &:active {
         display:none;
@@ -129,18 +128,22 @@ span.position {
     
 }
 
+/*page des restaurants menus*/
+
 .menu {
-    padding-left:0.6em;
+    padding-left:0.6em;    
     box-sizing:border-box;
     width:100%;  
-    margin-top:-3.4em;
-    border-radius:4.5em 4.5em 0 0;
-    position:absolute;
+    height:auto;
+   padding-bottom:5em;
+    margin-top:-5em;
+    position:relative;
+    z-index:2;    
+    border-radius:2em 2em 0 0;   
     background:$color-container-primary;
-
+    
+     
 }
-
-
 
 .entrée {
     &_1 {   
@@ -203,22 +206,23 @@ span.position {
 
     &_nom {     
       font-weight:bold;     
-            
+        white-space:nowrap;
     }
 
     &_commentaire {
         margin-top:0.3em; 
-        white-space: nowrap;    
-        
+        white-space: nowrap;   
+        overflow:hidden;
+        text-overflow:ellipsis; 
+       
     }
     
-    &_tarif {
-      transform:translate(100%);
-      margin-right:0;
-      padding-right:1em;
+    &_tarif {     
+      
+      position:sticky;
       font-weight: bold;     
       margin-top:2em;
-      transform-origin:right;
+      transform: translateX(120%);
       transition: transform 200ms ease-in;
      
     }
@@ -235,6 +239,7 @@ span.position {
     transform: scaleX(0);
     transform-origin:right;
     transition: transform 200ms ease-in;
+    
     i {
         font-size:2em;  
        color:white;
@@ -247,15 +252,33 @@ span.position {
 .part_nom_commentaire {
     display: flex;
     flex-direction: column;
+    width:80%;
+    padding-left:0.5em;    
+    transition: max-width .5s ease;
 }
 
 .part_tarif_box_achat {
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap:0.5em;
+    box-sizing: content-box;    
+    width:25%;
+    position:absolute;
+    border-radius:0 1.25em 1.25em 0;
+    right:4%;
+     
+    
 }
 
 
-    
+div.commande {
+    display:flex;
+    justify-content: center;
+    margin-bottom:5em;
+    background:$color-container-primary;
+    margin-top:5em;
+}
 
    
 

@@ -2,8 +2,7 @@
 body {     
     margin:0;
     margin-left: auto;
-    margin-right:auto;  
-    
+    margin-right:auto;   
     
     
 }
@@ -12,7 +11,8 @@ div.partie_principal {
   padding-right: 25px;
   
   @include mobile {
-    padding:0;
+    padding:0px;
+    
   }
 
 }
@@ -32,7 +32,8 @@ div bouton p {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;   
+  
  
   &:visited {
     color:black;
@@ -51,17 +52,20 @@ ul {
 h5 {
   display:flex;
   justify-content: space-between;
-  margin-right:2em;
-  font-family: "shrikhand";
-  
+  margin-right:1em;
+  font-family: "shrikhand";  
+  padding-top:1em;
   font-size:1.6em;
+  i {
+    margin-top:0.2em;
+  }
+  
 }
 h6 {
   font-size:1.2em;
   font-weight:lighter;
   text-transform: uppercase;
   margin-bottom: 1.5em;  
- 
  
 }
 
@@ -73,3 +77,19 @@ h6 {
   color:$color-tertiary;
 }
 
+div.titre_resto {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width:90%;
+  height:100%;
+  
+}
+
+
+
+h4 {
+  font-size:1.5em;
+  margin-top:2.5em;
+  margin-bottom:0;
+}

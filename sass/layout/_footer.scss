@@ -1,5 +1,6 @@
 footer {
-    margin-top:5em;
+    
+   
     padding-top:1em;
     padding-bottom:1em;
     background-color:black;
@@ -12,12 +13,18 @@ footer {
     }
     
     
-       li {
+    li {
             display:flex;
             gap:1em;
             color:white;
-            
-           
+
+            a {
+                color:white;
+                &:visited {
+                    color:white;
+                }
+            }
+                      
     }
 }
 

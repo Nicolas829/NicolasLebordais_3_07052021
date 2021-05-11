@@ -29,25 +29,6 @@ Thèmes.
 }
 
 ***/
-/***
-
-@mixin btn {
-    padding: $grid-gutter;
-    @include border;
-    color: $colour-primary;
-    background: $colour-secondary;
-    cursor: pointer;
-    &:hover{
-        background: $colour-primary;
-        color: $colour-accent;
-    }
-    &--full-width {
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
-    ****/
 body {
   margin: 0;
   margin-left: auto;
@@ -60,7 +41,7 @@ div.partie_principal {
 }
 @media (max-width: 540px) {
   div.partie_principal {
-    padding: 0;
+    padding: 0px;
   }
 }
 
@@ -96,9 +77,13 @@ ul {
 h5 {
   display: flex;
   justify-content: space-between;
-  margin-right: 2em;
+  margin-right: 1em;
   font-family: "shrikhand";
+  padding-top: 1em;
   font-size: 1.6em;
+}
+h5 i {
+  margin-top: 0.2em;
 }
 
 h6 {
@@ -116,6 +101,20 @@ h6 {
   color: #99E2D0;
 }
 
+div.titre_resto {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 90%;
+  height: 100%;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-top: 2.5em;
+  margin-bottom: 0;
+}
+
 @font-family : "Roboto", sans-serif;
 @font-family : "Shrikhand", cursive;
 h1 {
@@ -126,9 +125,22 @@ html {
   font-family: "Roboto";
 }
 
-.part1 {
+.logo_accueil {
   display: flex;
   justify-content: center;
+}
+
+.logo_pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+}
+.logo_pages i {
+  margin-left: 1.5em;
+}
+.logo_pages h1 {
+  margin-right: 3em;
 }
 
 div.photo_resto img {
@@ -137,10 +149,11 @@ div.photo_resto img {
   height: 18em;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 
 footer {
-  margin-top: 5em;
   padding-top: 1em;
   padding-bottom: 1em;
   background-color: black;
@@ -155,6 +168,12 @@ footer h4 {
 footer li {
   display: flex;
   gap: 1em;
+  color: white;
+}
+footer li a {
+  color: white;
+}
+footer li a:visited {
   color: white;
 }
 
@@ -250,6 +269,7 @@ span.position {
   margin-left: -0.9em;
 }
 
+/***page d'accueil liste des restaurant***/
 .container_restaurant {
   display: flex;
   flex-direction: column;
@@ -261,7 +281,7 @@ span.position {
 }
 .container_restaurant .box_resto {
   box-sizing: border-box;
-  width: 80%;
+  width: 90%;
   height: 15em;
   display: flex;
   flex-direction: column;
@@ -314,13 +334,17 @@ span.position {
   display: block;
 }
 
+/*page des restaurants menus*/
 .menu {
   padding-left: 0.6em;
   box-sizing: border-box;
   width: 100%;
-  margin-top: -3.4em;
-  border-radius: 4.5em 4.5em 0 0;
-  position: absolute;
+  height: auto;
+  padding-bottom: 5em;
+  margin-top: -5em;
+  position: relative;
+  z-index: 2;
+  border-radius: 2em 2em 0 0;
   background: #e9e3e3;
 }
 
@@ -331,7 +355,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -343,6 +366,9 @@ span.position {
 .entrée_1:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.entrée_1:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .entrée_2 {
   display: flex;
   flex-direction: row;
@@ -350,7 +376,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -362,6 +387,9 @@ span.position {
 .entrée_2:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.entrée_2:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .entrée_3 {
   display: flex;
   flex-direction: row;
@@ -369,7 +397,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -381,6 +408,9 @@ span.position {
 .entrée_3:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.entrée_3:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .entrée_4 {
   display: flex;
   flex-direction: row;
@@ -388,7 +418,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -400,6 +429,9 @@ span.position {
 .entrée_4:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.entrée_4:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 
 .plat_1 {
   display: flex;
@@ -408,7 +440,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -420,6 +451,9 @@ span.position {
 .plat_1:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.plat_1:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .plat_2 {
   display: flex;
   flex-direction: row;
@@ -427,7 +461,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -439,6 +472,9 @@ span.position {
 .plat_2:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.plat_2:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .plat_3 {
   display: flex;
   flex-direction: row;
@@ -446,7 +482,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -458,6 +493,9 @@ span.position {
 .plat_3:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.plat_3:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .plat_4 {
   display: flex;
   flex-direction: row;
@@ -465,7 +503,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -477,6 +514,9 @@ span.position {
 .plat_4:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.plat_4:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 
 .dessert_1 {
   display: flex;
@@ -485,7 +525,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -497,6 +536,9 @@ span.position {
 .dessert_1:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.dessert_1:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .dessert_2 {
   display: flex;
   flex-direction: row;
@@ -504,7 +546,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -516,6 +557,9 @@ span.position {
 .dessert_2:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.dessert_2:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .dessert_3 {
   display: flex;
   flex-direction: row;
@@ -523,7 +567,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -535,6 +578,9 @@ span.position {
 .dessert_3:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.dessert_3:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 .dessert_4 {
   display: flex;
   flex-direction: row;
@@ -542,7 +588,6 @@ span.position {
   align-items: center;
   background: white;
   box-sizing: border-box;
-  padding-left: 0.5em;
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
@@ -554,21 +599,25 @@ span.position {
 .dessert_4:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
+.dessert_4:active > .part_nom_commentaire {
+  max-width: 70%;
+}
 
 .plat_nom {
   font-weight: bold;
+  white-space: nowrap;
 }
 .plat_commentaire {
   margin-top: 0.3em;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat_tarif {
-  transform: translate(100%);
-  margin-right: 0;
-  padding-right: 1em;
+  position: sticky;
   font-weight: bold;
   margin-top: 2em;
-  transform-origin: right;
+  transform: translateX(120%);
   transition: transform 200ms ease-in;
 }
 .plat_box_achat {
@@ -592,19 +641,37 @@ span.position {
 .part_nom_commentaire {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  padding-left: 0.5em;
+  transition: max-width 0.5s ease;
 }
 
 .part_tarif_box_achat {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5em;
+  box-sizing: content-box;
+  width: 25%;
+  position: absolute;
+  border-radius: 0 1.25em 1.25em 0;
+  right: 4%;
+}
+
+div.commande {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+  background: #e9e3e3;
+  margin-top: 5em;
 }
 
 .btn-exploration {
-  width: 30%;
-  box-shadow: 0em 0.1em 0.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
+  box-shadow: 0em 0.1em 0.5em;
   background: white;
   background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
   border-radius: 2em;
@@ -612,15 +679,49 @@ span.position {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
+.btn-exploration p {
+  align-self: center;
+  color: white;
+}
 @media (max-width: 540px) {
   .btn-exploration {
     width: 60%;
   }
 }
+.btn-exploration:active {
+  transform: scale(1.05);
+}
 
-.btn-exploration p {
+div.commande {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+  background: #e9e3e3;
+  margin-top: 5em;
+}
+
+.btn-cmd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  box-shadow: 0em 0.1em 0.5em;
+  background: white;
+  background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
+  border-radius: 2em;
+  cursor: pointer;
+}
+.btn-cmd p {
   align-self: center;
   color: white;
+}
+@media (max-width: 540px) {
+  .btn-cmd {
+    width: 60%;
+  }
+}
+.btn-cmd:active {
+  transform: scale(1.05);
 }
 
 .btn_fonction_choix {
