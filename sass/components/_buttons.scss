@@ -18,18 +18,19 @@
 
     &_choix {
         @include container_fonctionnement;
-        animation: fadein 4s;
+       
+        animation: fadeinfonction 1s;
             }
 
     &_composition {
         @include container_fonctionnement;
-        animation: fadein 3s;            
+        animation: fadeinfonction 1s;            
             
     }
 
     &_degustation {
         @include container_fonctionnement;
-        animation: fadein 2s;
+        animation: fadeinfonction 1s;
         
     }
        

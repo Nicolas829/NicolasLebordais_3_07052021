@@ -2,21 +2,29 @@ footer {
     
    
     padding-top:1em;
-    padding-bottom:1em;
+    padding-bottom:2em;
+    
     background-color:black;
-    line-height:0em;
+    line-height:1.7em;
     h4 {
         font-family: "Shrikhand";
         font-weight:lighter;
         color:white;
-        margin-left: 2.5em;;
+        margin-left: 1.5em;
     }
     
-    
-    li {
+    ul {
+
+        li {
             display:flex;
             gap:1em;
             color:white;
+            justify-content: flex-start;
+            
+            i { font-size:1em;
+                width:5%;
+
+            }
 
             a {
                 color:white;
@@ -24,9 +32,10 @@ footer {
                     color:white;
                 }
             }
+           }       
                       
-    }
-}
+        }
+        }
 
 
 

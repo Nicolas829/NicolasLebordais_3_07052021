@@ -14,7 +14,7 @@
     justify-content: center;
     align-items:center;
     width:30%;  
-    box-shadow: 0em 0.1em 0.5em ;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
       & p {
         align-self:center;
         color:white;
@@ -50,10 +50,9 @@
 
     @mixin container_fonctionnement {        
        
-        display:flex;
-        justify-content: flex-start;
-        align-items:center;          
-        height:4em;       
+        display:flex;                                     
+        height:4em;  
+        margin-bottom:2em;     
         box-shadow: 0em 0.1em 0.5em ;
         border-radius:2em;
         background-color:$color-container-primary;
@@ -78,11 +77,15 @@
         width:95%;
         border-radius:1.25em;
         height:4em;
-        margin-bottom:2em;
+        margin-bottom:1em;
+        animation: fadeinmenu 2s;
         &:active > .part_tarif_box_achat {
 
             & > .plat_box_achat {
            transform: scaleX(1);
+              & > i {
+                  transform:rotate(1turn);
+              }
        }
            & > .plat_tarif {
            transform:translate(0%);
@@ -91,7 +94,7 @@
     }
         &:active > .part_nom_commentaire {
           
-          max-width:70%
+            width: 70%;                     
         
     }
 }

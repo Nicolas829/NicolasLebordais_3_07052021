@@ -112,8 +112,6 @@ div.titre_resto {
 
 h4 {
   font-size: 1.5em;
-  margin-top: 2.5em;
-  margin-bottom: 0;
 }
 
 @font-family : "Roboto", sans-serif;
@@ -156,60 +154,74 @@ div.photo_resto img {
 
 footer {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   background-color: black;
-  line-height: 0em;
+  line-height: 1.7em;
 }
 footer h4 {
   font-family: "Shrikhand";
   font-weight: lighter;
   color: white;
-  margin-left: 2.5em;
+  margin-left: 1.5em;
 }
-footer li {
+footer ul li {
   display: flex;
   gap: 1em;
   color: white;
+  justify-content: flex-start;
 }
-footer li a {
+footer ul li i {
+  font-size: 1em;
+  width: 5%;
+}
+footer ul li a {
   color: white;
 }
-footer li a:visited {
+footer ul li a:visited {
   color: white;
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeinmenu {
   from {
     opacity: 0;
+    margin-bottom: 3em;
   }
   to {
     opacity: 1;
+    margin-bottom: 1em;
   }
 }
 
-@keyframes fadein {
+@keyframes fadeinmenu {
   from {
     opacity: 0;
+    margin-bottom: 3em;
   }
   to {
     opacity: 1;
+    margin-bottom: 1em;
   }
 }
-.degustation {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+@-webkit-keyframes fadeinfonction {
+  from {
+    opacity: 0;
+    margin-bottom: 4em;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 2em;
+  }
 }
-
-.Composition {
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+@keyframes fadeinfonction {
+  from {
+    opacity: 0;
+    margin-bottom: 4em;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 2em;
+  }
 }
-
-.choix {
-  -webkit-animation: fadein 4s;
-          animation: fadein 4s;
-}
-
 .part2 {
   display: flex;
   flex-direction: column;
@@ -238,6 +250,10 @@ footer li a:visited {
   align-items: center;
 }
 
+.alignement {
+  margin-left: 1.5em;
+  margin-right: 0.5em;
+}
 .alignement h3 {
   box-sizing: border-box;
   width: 95%;
@@ -248,7 +264,6 @@ footer li a:visited {
   flex-direction: column;
   padding-left: 1em;
   padding-right: 0.5em;
-  gap: 2em;
 }
 .alignement li {
   box-sizing: border-box;
@@ -276,7 +291,7 @@ span.position {
   flex-direction: column;
   background: #f2f2f2;
   align-items: center;
-  margin-top: 5em;
+  margin-top: 3em;
   padding-bottom: 3em;
   gap: 2em;
 }
@@ -341,7 +356,7 @@ span.position {
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  padding-bottom: 5em;
+  padding-bottom: 2em;
   margin-top: -5em;
   position: relative;
   z-index: 2;
@@ -359,16 +374,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .entrée_1:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.entrée_1:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .entrée_1:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .entrée_1:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .entrée_2 {
   display: flex;
@@ -380,16 +400,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .entrée_2:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.entrée_2:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .entrée_2:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .entrée_2:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .entrée_3 {
   display: flex;
@@ -401,16 +426,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .entrée_3:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.entrée_3:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .entrée_3:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .entrée_3:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .entrée_4 {
   display: flex;
@@ -422,16 +452,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .entrée_4:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.entrée_4:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .entrée_4:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .entrée_4:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 
 .plat_1 {
@@ -444,16 +479,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .plat_1:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.plat_1:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .plat_1:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .plat_1:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .plat_2 {
   display: flex;
@@ -465,16 +505,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .plat_2:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.plat_2:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .plat_2:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .plat_2:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .plat_3 {
   display: flex;
@@ -486,16 +531,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .plat_3:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.plat_3:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .plat_3:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .plat_3:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .plat_4 {
   display: flex;
@@ -507,16 +557,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .plat_4:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.plat_4:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .plat_4:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .plat_4:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 
 .dessert_1 {
@@ -529,16 +584,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .dessert_1:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.dessert_1:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .dessert_1:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .dessert_1:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .dessert_2 {
   display: flex;
@@ -550,16 +610,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .dessert_2:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.dessert_2:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .dessert_2:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .dessert_2:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .dessert_3 {
   display: flex;
@@ -571,16 +636,21 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .dessert_3:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.dessert_3:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .dessert_3:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .dessert_3:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 .dessert_4 {
   display: flex;
@@ -592,24 +662,31 @@ span.position {
   width: 95%;
   border-radius: 1.25em;
   height: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  -webkit-animation: fadeinmenu 2s;
+          animation: fadeinmenu 2s;
 }
 .dessert_4:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
+}
+.dessert_4:active > .part_tarif_box_achat > .plat_box_achat > i {
+  transform: rotate(1turn);
 }
 .dessert_4:active > .part_tarif_box_achat > .plat_tarif {
   transform: translate(0%);
 }
 .dessert_4:active > .part_nom_commentaire {
-  max-width: 70%;
+  width: 70%;
 }
 
 .plat_nom {
   font-weight: bold;
+  font-size: 1em;
   white-space: nowrap;
 }
 .plat_commentaire {
   margin-top: 0.3em;
+  font-size: 0.9em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -619,7 +696,7 @@ span.position {
   font-weight: bold;
   margin-top: 2em;
   transform: translateX(120%);
-  transition: transform 200ms ease-in;
+  transition: transform 600ms ease-in;
 }
 .plat_box_achat {
   width: 4em;
@@ -632,19 +709,20 @@ span.position {
   border-radius: 0 1.25em 1.25em 0;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 200ms ease-in;
+  transition: transform 800ms ease-out;
 }
 .plat_box_achat i {
   font-size: 2em;
   color: white;
+  transition: all 800ms ease-out;
 }
 
 .part_nom_commentaire {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 75%;
   padding-left: 0.5em;
-  transition: max-width 0.5s ease;
+  transition: width 600ms ease-out;
 }
 
 .part_tarif_box_achat {
@@ -655,6 +733,7 @@ span.position {
   box-sizing: content-box;
   width: 25%;
   position: absolute;
+  overflow: hidden;
   border-radius: 0 1.25em 1.25em 0;
   right: 4%;
 }
@@ -672,7 +751,7 @@ div.commande {
   justify-content: center;
   align-items: center;
   width: 30%;
-  box-shadow: 0em 0.1em 0.5em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background: white;
   background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
   border-radius: 2em;
@@ -698,7 +777,7 @@ div.commande {
   justify-content: center;
   align-items: center;
   width: 30%;
-  box-shadow: 0em 0.1em 0.5em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background: white;
   background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
   border-radius: 2em;
@@ -719,14 +798,13 @@ div.commande {
 
 .btn_fonction_choix {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   height: 4em;
+  margin-bottom: 2em;
   box-shadow: 0em 0.1em 0.5em;
   border-radius: 2em;
   background-color: #f2f2f2;
-  -webkit-animation: fadein 4s;
-          animation: fadein 4s;
+  -webkit-animation: fadeinfonction 1s;
+          animation: fadeinfonction 1s;
 }
 .btn_fonction_choix i {
   background: #9356DC;
@@ -739,14 +817,13 @@ div.commande {
 }
 .btn_fonction_composition {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   height: 4em;
+  margin-bottom: 2em;
   box-shadow: 0em 0.1em 0.5em;
   border-radius: 2em;
   background-color: #f2f2f2;
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+  -webkit-animation: fadeinfonction 1s;
+          animation: fadeinfonction 1s;
 }
 .btn_fonction_composition i {
   background: #9356DC;
@@ -759,14 +836,13 @@ div.commande {
 }
 .btn_fonction_degustation {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   height: 4em;
+  margin-bottom: 2em;
   box-shadow: 0em 0.1em 0.5em;
   border-radius: 2em;
   background-color: #f2f2f2;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+  -webkit-animation: fadeinfonction 1s;
+          animation: fadeinfonction 1s;
 }
 .btn_fonction_degustation i {
   background: #9356DC;
