@@ -3,6 +3,9 @@
     @include btn;    
     margin-bottom:1.5em;
     margin-top: 1.5em;  
+   perspective:500px;
+    transform: rotate3d(45deg,45deg,45deg,10deg);
+  
 
 }
 
@@ -17,20 +20,25 @@
 .btn_fonction {
 
     &_choix {
-        @include container_fonctionnement;
+        @include container_fonctionnement;       
+        animation:fadein_left 3s forwards ;
+      
        
-        animation: fadeinfonction 1s;
             }
 
     &_composition {
+      
+       
+       
         @include container_fonctionnement;
-        animation: fadeinfonction 1s;            
+        
+        animation:fadein_center 3s;
             
     }
 
     &_degustation {
         @include container_fonctionnement;
-        animation: fadeinfonction 1s;
+        animation:fadein_right 3s forwards;
         
     }
        

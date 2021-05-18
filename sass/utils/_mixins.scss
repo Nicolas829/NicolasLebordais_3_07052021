@@ -15,6 +15,7 @@
     align-items:center;
     width:30%;  
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    animation:btn 1s 3s;
       & p {
         align-self:center;
         color:white;
@@ -31,7 +32,12 @@
 
     }
 
+    @mixin color_bg {
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,121,218,1) 120%);
 
+
+    }
 
     @mixin color-secondary-gradiant {
         background: rgb(255,255,255);
@@ -48,6 +54,12 @@
         }
     }
 
+    @mixin desktop {
+        @media (min-width:541px) {
+            @content;
+        }
+    }
+
     @mixin container_fonctionnement {        
        
         display:flex;                                     
@@ -55,7 +67,14 @@
         margin-bottom:2em;     
         box-shadow: 0em 0.1em 0.5em ;
         border-radius:2em;
+        width:50%;
+        align-self:center;
         background-color:$color-container-primary;
+        
+        @include mobile {
+            animation: fadein_fonction_mobile 1s;
+            width:100%;
+        }
           & i {
             background:$color-primary;
             background-clip:text;
@@ -63,7 +82,25 @@
           }
         &:active {
             background: $color-primary-light ;
+            opacity:0.4;
           }                 
+    }
+
+
+    @mixin box_resto {
+        box-sizing:border-box;
+        width:90%;    
+        height:15em;
+        display:flex;
+        flex-direction: column;
+        border-radius:1.25em;
+        background: white;    
+        position:absolute;     
+        @include mobile {
+            transform:none;
+            position:relative;
+            
+            }
     }
 
     @mixin container_menu {
@@ -78,7 +115,9 @@
         border-radius:1.25em;
         height:4em;
         margin-bottom:1em;
-        animation: fadeinmenu 2s;
+        opacity:0;
+        
+        
         &:active > .part_tarif_box_achat {
 
             & > .plat_box_achat {

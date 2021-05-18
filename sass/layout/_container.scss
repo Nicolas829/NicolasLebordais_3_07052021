@@ -1,5 +1,8 @@
 .part2 {
     @include main_container;   
+    
+    @include desktop {
+        border-radius:2em 2em 0 0;}
       
 }
 
@@ -13,6 +16,9 @@
     height:3em;
     align-items: center;
     font-weight: bold;
+    @include desktop {
+    border-radius:2em 2em 0 0;}
+    
 }
 
 .accueil_decouverte {
@@ -23,32 +29,55 @@
     align-items:center;   
       
 }
-
 .alignement {
-
+    margin-top:6em;
     margin-left:1.5em;
-    margin-right:0.5em;
+    @include desktop {
+        display: flex;
+       flex-direction: column;
+      
+    }
     h3 {
+    
+        font-size:1.4em;
+        @include desktop {
+            display: flex;
+            justify-content: center;
+            align-self:center;
     box-sizing: border-box;
-    width:95%;
-    align-self:center;
+    width:90%;
+     height:1.5em;
+     border-radius:2em;
+     color:white;
+    margin-bottom:3em;
+    box-shadow: 0em 0em 1em 0.5em;
+    @include color-secondary-gradiant;
+        }
+       
+    }
 }
+
+.container_fonctionnement {
+  
+   
+    margin-right:0.5em; 
+   
+   
     ul {    
     display: flex;
     flex-direction: column;
     padding-left:1em;
     padding-right:0.5em;
-    
+    align-content: center;
+   
    
 }
         li {
     box-sizing: border-box;
     width:100%;
-    display: flex;
-    justify-content: flex-start;
+    display: flex;    
     gap:2em;
-    align-items:center;
-    
+    align-items:center;   
     
 }
 }
@@ -67,23 +96,83 @@ span.position {
 /***page d'accueil liste des restaurant***/
 
 .container_restaurant {
-    display: flex;
-    flex-direction:column;
-    background: $color-container-primary;
-    align-items: center;
-    margin-top:3em;
-   padding-bottom: 3em;
-    gap:2em;
-
-    .box_resto {
-    
+    @include desktop {
+        border-radius:2em 2em 0 0;}
+    perspective:1000px;
     box-sizing:border-box;
-    width:90%;    
-    height:15em;
-    display:flex;
+    width:100%;
+    height:500px;
+    display: flex;
     flex-direction: column;
-    border-radius:1.25em;
-    background: white;
+   align-items: center;    
+    @include mobile {        
+        height:100%;
+        perspective:0px;
+        background: $color-container-primary;
+    }
+    margin-top:3em;
+    padding-bottom: 3em;
+    margin-bottom:4em;
+    
+}
+
+.restaurant_wrapper {
+    transform-style: preserve-3d;
+    box-sizing: border-box;     
+    width:95%;
+    height:1000px;
+    @include mobile {
+        height:100%;
+    }
+   
+    animation:swirl 10s infinite ease-in paused ;    
+    transform-origin: center 9.5em ;        
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;    
+    align-items: center; 
+    &:hover {
+        animation-play-state: running;
+    } 
+         
+
+    @include mobile {
+        animation:none;
+        gap:2em;
+        
+    }
+    
+}
+
+.box_resto {
+    &_1 {
+        @include box_resto;
+        transform: rotateX(0deg) translateZ(7.5em) ;
+      
+    }
+    &_2 {
+        @include box_resto;
+        transform: rotateX(90deg) translateZ(7.5em);
+        
+    }
+        
+    &_3 {
+        @include box_resto;
+        transform: rotateX(180deg) translateZ(7.5em);        
+       
+    }
+    &_4 {
+        @include box_resto;
+        transform: rotateX(270deg) translateZ(7.5em);
+        
+    }
+}
+
+
+
+.box_resto {
+        
+
     &_nom_lieu_heart {
         display:flex;
         justify-content: space-between;
@@ -118,7 +207,7 @@ span.position {
             overflow: hidden;
              border-radius:1.25em 1.25em 0 0;
      }
-}
+    
 
 #checked {
     display:none;
@@ -139,7 +228,8 @@ span.position {
 .menu {
     padding-left:0.6em;    
     box-sizing:border-box;
-    width:100%;  
+    transform:translateX(15%);
+    width:80%;  
     height:auto;
    padding-bottom:2em;
     margin-top:-5em;
@@ -155,18 +245,20 @@ span.position {
     
     &_1 {   
     @include container_menu;      
-        
+    animation: fadeinmenu 1s forwards;
     }
     &_2{   
-        @include container_menu;      
+        @include container_menu;     
+        animation: fadeinmenu 1s 1s forwards; 
             
         }
     &_3{   
         @include container_menu;      
-            
+        animation: fadeinmenu 1s 2s forwards; 
         }
     &_4 {
         @include container_menu;   
+        animation: fadeinmenu 1s 3s forwards; 
     }
     }
 
@@ -174,36 +266,40 @@ span.position {
 .plat {
     &_1 {   
         @include container_menu;      
-            
+        animation: fadeinmenu 1s forwards;
         }
         &_2{   
-            @include container_menu;      
+            @include container_menu;     
+            animation: fadeinmenu 1s 1s forwards; 
                 
             }
         &_3{   
             @include container_menu;      
-                
+            animation: fadeinmenu 1s 2s forwards; 
             }
         &_4 {
             @include container_menu;   
+            animation: fadeinmenu 1s 3s forwards; 
         }
         }
     
 .dessert {
     &_1 {   
         @include container_menu;      
-            
+        animation: fadeinmenu 1s forwards;
         }
         &_2{   
-            @include container_menu;      
+            @include container_menu;     
+            animation: fadeinmenu 1s 1s forwards; 
                 
             }
         &_3{   
             @include container_menu;      
-                
+            animation: fadeinmenu 1s 2s forwards; 
             }
         &_4 {
             @include container_menu;   
+            animation: fadeinmenu 1s 3s forwards; 
         }
         }
 

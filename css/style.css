@@ -33,15 +33,25 @@ body {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
+  background: white;
+  background: radial-gradient(circle, white 0%, #ff79da 120%);
+}
+@media (max-width: 540px) {
+  body {
+    -webkit-animation: none;
+            animation: none;
+    background: white;
+  }
 }
 
 div.partie_principal {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15em;
+  padding-right: 15em;
 }
 @media (max-width: 540px) {
   div.partie_principal {
     padding: 0px;
+    background-color: white;
   }
 }
 
@@ -113,6 +123,19 @@ div.titre_resto {
 h4 {
   font-size: 1.5em;
 }
+@media (min-width: 541px) {
+  h4 {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.5em;
+    border-radius: 2em;
+    color: white;
+    box-shadow: 0em 0em 1em 0.5em;
+    background: white;
+    background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
+  }
+}
 
 @font-family : "Roboto", sans-serif;
 @font-family : "Shrikhand", cursive;
@@ -135,11 +158,25 @@ html {
   align-items: center;
   height: 4em;
 }
+@media (min-width: 541px) {
+  .logo_pages {
+    height: 8em;
+    justify-content: center;
+  }
+}
 .logo_pages i {
   margin-left: 1.5em;
 }
-.logo_pages h1 {
-  margin-right: 3em;
+@media (min-width: 541px) {
+  .logo_pages i {
+    margin-left: -15em;
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 540px) {
+  .logo_pages h1 {
+    margin-right: 3em;
+  }
 }
 
 div.photo_resto img {
@@ -158,11 +195,12 @@ footer {
   background-color: black;
   line-height: 1.7em;
 }
-footer h4 {
+footer p {
   font-family: "Shrikhand";
   font-weight: lighter;
   color: white;
   margin-left: 1.5em;
+  font-size: 1.5em;
 }
 footer ul li {
   display: flex;
@@ -184,25 +222,21 @@ footer ul li a:visited {
 @-webkit-keyframes fadeinmenu {
   from {
     opacity: 0;
-    margin-bottom: 3em;
   }
   to {
     opacity: 1;
-    margin-bottom: 1em;
   }
 }
 
 @keyframes fadeinmenu {
   from {
     opacity: 0;
-    margin-bottom: 3em;
   }
   to {
     opacity: 1;
-    margin-bottom: 1em;
   }
 }
-@-webkit-keyframes fadeinfonction {
+@-webkit-keyframes fadein_fonction_mobile {
   from {
     opacity: 0;
     margin-bottom: 4em;
@@ -212,7 +246,7 @@ footer ul li a:visited {
     margin-bottom: 2em;
   }
 }
-@keyframes fadeinfonction {
+@keyframes fadein_fonction_mobile {
   from {
     opacity: 0;
     margin-bottom: 4em;
@@ -220,6 +254,153 @@ footer ul li a:visited {
   to {
     opacity: 1;
     margin-bottom: 2em;
+  }
+}
+@-webkit-keyframes btn {
+  10% {
+    transform: translateX(2%);
+  }
+  15% {
+    transform: translateY(2%);
+  }
+  20% {
+    transform: translateX(-2%);
+  }
+  25% {
+    transform: translateY(-2%);
+  }
+  30% {
+    transform: translateX(2%);
+  }
+  35% {
+    transform: translateY(2%);
+  }
+  40% {
+    transform: translateX(-2%);
+  }
+  45% {
+    transform: translateY(-2%);
+  }
+}
+@keyframes btn {
+  10% {
+    transform: translateX(2%);
+  }
+  15% {
+    transform: translateY(2%);
+  }
+  20% {
+    transform: translateX(-2%);
+  }
+  25% {
+    transform: translateY(-2%);
+  }
+  30% {
+    transform: translateX(2%);
+  }
+  35% {
+    transform: translateY(2%);
+  }
+  40% {
+    transform: translateX(-2%);
+  }
+  45% {
+    transform: translateY(-2%);
+  }
+}
+@-webkit-keyframes fadein_left {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+@keyframes fadein_left {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+@-webkit-keyframes fadein_center {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+@keyframes fadein_center {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes fadein_right {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+}
+@keyframes fadein_right {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+}
+/**animation volet pour restaurant***/
+@-webkit-keyframes swirl {
+  0% {
+    transform: rotateX(0deg);
+  }
+  25% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  75% {
+    transform: rotateX(270deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes swirl {
+  0% {
+    transform: rotateX(0deg);
+  }
+  25% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  75% {
+    transform: rotateX(270deg);
+  }
+  100% {
+    transform: rotateX(360deg);
   }
 }
 .part2 {
@@ -228,6 +409,11 @@ footer ul li a:visited {
   background-color: #f2f2f2;
   box-sizing: border-box;
   text-align: center;
+}
+@media (min-width: 541px) {
+  .part2 {
+    border-radius: 2em 2em 0 0;
+  }
 }
 
 .localisation {
@@ -241,6 +427,11 @@ footer ul li a:visited {
   align-items: center;
   font-weight: bold;
 }
+@media (min-width: 541px) {
+  .localisation {
+    border-radius: 2em 2em 0 0;
+  }
+}
 
 .accueil_decouverte {
   margin-top: 1.5em;
@@ -251,25 +442,49 @@ footer ul li a:visited {
 }
 
 .alignement {
+  margin-top: 6em;
   margin-left: 1.5em;
-  margin-right: 0.5em;
+}
+@media (min-width: 541px) {
+  .alignement {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .alignement h3 {
-  box-sizing: border-box;
-  width: 95%;
-  align-self: center;
+  font-size: 1.4em;
 }
-.alignement ul {
+@media (min-width: 541px) {
+  .alignement h3 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    width: 90%;
+    height: 1.5em;
+    border-radius: 2em;
+    color: white;
+    margin-bottom: 3em;
+    box-shadow: 0em 0em 1em 0.5em;
+    background: white;
+    background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
+  }
+}
+
+.container_fonctionnement {
+  margin-right: 0.5em;
+}
+.container_fonctionnement ul {
   display: flex;
   flex-direction: column;
   padding-left: 1em;
   padding-right: 0.5em;
+  align-content: center;
 }
-.alignement li {
+.container_fonctionnement li {
   box-sizing: border-box;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
   gap: 2em;
   align-items: center;
 }
@@ -287,15 +502,61 @@ span.position {
 
 /***page d'accueil liste des restaurant***/
 .container_restaurant {
+  perspective: 1000px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  background: #f2f2f2;
   align-items: center;
   margin-top: 3em;
   padding-bottom: 3em;
-  gap: 2em;
+  margin-bottom: 4em;
 }
-.container_restaurant .box_resto {
+@media (min-width: 541px) {
+  .container_restaurant {
+    border-radius: 2em 2em 0 0;
+  }
+}
+@media (max-width: 540px) {
+  .container_restaurant {
+    height: 100%;
+    perspective: 0px;
+    background: #f2f2f2;
+  }
+}
+
+.restaurant_wrapper {
+  transform-style: preserve-3d;
+  box-sizing: border-box;
+  width: 95%;
+  height: 1000px;
+  -webkit-animation: swirl 10s infinite ease-in paused;
+          animation: swirl 10s infinite ease-in paused;
+  transform-origin: center 9.5em;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 540px) {
+  .restaurant_wrapper {
+    height: 100%;
+  }
+}
+.restaurant_wrapper:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@media (max-width: 540px) {
+  .restaurant_wrapper {
+    -webkit-animation: none;
+            animation: none;
+    gap: 2em;
+  }
+}
+
+.box_resto_1 {
   box-sizing: border-box;
   width: 90%;
   height: 15em;
@@ -303,23 +564,83 @@ span.position {
   flex-direction: column;
   border-radius: 1.25em;
   background: white;
+  position: absolute;
+  transform: rotateX(0deg) translateZ(7.5em);
 }
-.container_restaurant .box_resto_nom_lieu_heart {
+@media (max-width: 540px) {
+  .box_resto_1 {
+    transform: none;
+    position: relative;
+  }
+}
+.box_resto_2 {
+  box-sizing: border-box;
+  width: 90%;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25em;
+  background: white;
+  position: absolute;
+  transform: rotateX(90deg) translateZ(7.5em);
+}
+@media (max-width: 540px) {
+  .box_resto_2 {
+    transform: none;
+    position: relative;
+  }
+}
+.box_resto_3 {
+  box-sizing: border-box;
+  width: 90%;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25em;
+  background: white;
+  position: absolute;
+  transform: rotateX(180deg) translateZ(7.5em);
+}
+@media (max-width: 540px) {
+  .box_resto_3 {
+    transform: none;
+    position: relative;
+  }
+}
+.box_resto_4 {
+  box-sizing: border-box;
+  width: 90%;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25em;
+  background: white;
+  position: absolute;
+  transform: rotateX(270deg) translateZ(7.5em);
+}
+@media (max-width: 540px) {
+  .box_resto_4 {
+    transform: none;
+    position: relative;
+  }
+}
+
+.box_resto_nom_lieu_heart {
   display: flex;
   justify-content: space-between;
   height: 4em;
 }
-.container_restaurant .box_resto_nom_lieu {
+.box_resto_nom_lieu {
   display: flex;
   flex-direction: column;
   padding-left: 0.5em;
   margin-top: 0.5em;
   gap: 0.2em;
 }
-.container_restaurant .box_resto_nom {
+.box_resto_nom {
   font-weight: bold;
 }
-.container_restaurant .box_resto_heart {
+.box_resto_heart {
   padding-right: 1em;
   align-self: center;
   font-size: 1.5em;
@@ -329,7 +650,8 @@ span.position {
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container_restaurant img {
+
+img {
   box-sizing: border-box;
   width: 100%;
   height: 11em;
@@ -354,7 +676,8 @@ span.position {
 .menu {
   padding-left: 0.6em;
   box-sizing: border-box;
-  width: 100%;
+  transform: translateX(15%);
+  width: 80%;
   height: auto;
   padding-bottom: 2em;
   margin-top: -5em;
@@ -375,8 +698,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s forwards;
+          animation: fadeinmenu 1s forwards;
 }
 .entrée_1:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -401,8 +725,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 1s forwards;
+          animation: fadeinmenu 1s 1s forwards;
 }
 .entrée_2:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -427,8 +752,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 2s forwards;
+          animation: fadeinmenu 1s 2s forwards;
 }
 .entrée_3:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -453,8 +779,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 3s forwards;
+          animation: fadeinmenu 1s 3s forwards;
 }
 .entrée_4:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -480,8 +807,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s forwards;
+          animation: fadeinmenu 1s forwards;
 }
 .plat_1:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -506,8 +834,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 1s forwards;
+          animation: fadeinmenu 1s 1s forwards;
 }
 .plat_2:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -532,8 +861,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 2s forwards;
+          animation: fadeinmenu 1s 2s forwards;
 }
 .plat_3:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -558,8 +888,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 3s forwards;
+          animation: fadeinmenu 1s 3s forwards;
 }
 .plat_4:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -585,8 +916,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s forwards;
+          animation: fadeinmenu 1s forwards;
 }
 .dessert_1:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -611,8 +943,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 1s forwards;
+          animation: fadeinmenu 1s 1s forwards;
 }
 .dessert_2:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -637,8 +970,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 2s forwards;
+          animation: fadeinmenu 1s 2s forwards;
 }
 .dessert_3:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -663,8 +997,9 @@ span.position {
   border-radius: 1.25em;
   height: 4em;
   margin-bottom: 1em;
-  -webkit-animation: fadeinmenu 2s;
-          animation: fadeinmenu 2s;
+  opacity: 0;
+  -webkit-animation: fadeinmenu 1s 3s forwards;
+          animation: fadeinmenu 1s 3s forwards;
 }
 .dessert_4:active > .part_tarif_box_achat > .plat_box_achat {
   transform: scaleX(1);
@@ -752,12 +1087,16 @@ div.commande {
   align-items: center;
   width: 30%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-animation: btn 1s 3s;
+          animation: btn 1s 3s;
   background: white;
   background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
   border-radius: 2em;
   cursor: pointer;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
+  perspective: 500px;
+  transform: rotate3d(45deg, 45deg, 45deg, 10deg);
 }
 .btn-exploration p {
   align-self: center;
@@ -778,6 +1117,8 @@ div.commande {
   align-items: center;
   width: 30%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-animation: btn 1s 3s;
+          animation: btn 1s 3s;
   background: white;
   background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
   border-radius: 2em;
@@ -802,9 +1143,18 @@ div.commande {
   margin-bottom: 2em;
   box-shadow: 0em 0.1em 0.5em;
   border-radius: 2em;
+  width: 50%;
+  align-self: center;
   background-color: #f2f2f2;
-  -webkit-animation: fadeinfonction 1s;
-          animation: fadeinfonction 1s;
+  -webkit-animation: fadein_left 3s forwards;
+          animation: fadein_left 3s forwards;
+}
+@media (max-width: 540px) {
+  .btn_fonction_choix {
+    -webkit-animation: fadein_fonction_mobile 1s;
+            animation: fadein_fonction_mobile 1s;
+    width: 100%;
+  }
 }
 .btn_fonction_choix i {
   background: #9356DC;
@@ -814,6 +1164,7 @@ div.commande {
 }
 .btn_fonction_choix:active {
   background: #bfa7dd;
+  opacity: 0.4;
 }
 .btn_fonction_composition {
   display: flex;
@@ -821,9 +1172,18 @@ div.commande {
   margin-bottom: 2em;
   box-shadow: 0em 0.1em 0.5em;
   border-radius: 2em;
+  width: 50%;
+  align-self: center;
   background-color: #f2f2f2;
-  -webkit-animation: fadeinfonction 1s;
-          animation: fadeinfonction 1s;
+  -webkit-animation: fadein_center 3s;
+          animation: fadein_center 3s;
+}
+@media (max-width: 540px) {
+  .btn_fonction_composition {
+    -webkit-animation: fadein_fonction_mobile 1s;
+            animation: fadein_fonction_mobile 1s;
+    width: 100%;
+  }
 }
 .btn_fonction_composition i {
   background: #9356DC;
@@ -833,6 +1193,7 @@ div.commande {
 }
 .btn_fonction_composition:active {
   background: #bfa7dd;
+  opacity: 0.4;
 }
 .btn_fonction_degustation {
   display: flex;
@@ -840,9 +1201,18 @@ div.commande {
   margin-bottom: 2em;
   box-shadow: 0em 0.1em 0.5em;
   border-radius: 2em;
+  width: 50%;
+  align-self: center;
   background-color: #f2f2f2;
-  -webkit-animation: fadeinfonction 1s;
-          animation: fadeinfonction 1s;
+  -webkit-animation: fadein_right 3s forwards;
+          animation: fadein_right 3s forwards;
+}
+@media (max-width: 540px) {
+  .btn_fonction_degustation {
+    -webkit-animation: fadein_fonction_mobile 1s;
+            animation: fadein_fonction_mobile 1s;
+    width: 100%;
+  }
 }
 .btn_fonction_degustation i {
   background: #9356DC;
@@ -852,6 +1222,7 @@ div.commande {
 }
 .btn_fonction_degustation:active {
   background: #bfa7dd;
+  opacity: 0.4;
 }
 
 .far fa-heart {
