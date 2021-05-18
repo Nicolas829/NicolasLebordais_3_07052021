@@ -1,11 +1,15 @@
 footer {
-    
-   
+      
     padding-top:1em;
-    padding-bottom:2em;
-    
+    padding-bottom:2em;    
     background-color:black;
     line-height:1.7em;
+    @include desktop {
+        height:10em;
+       z-index: 2;
+       position:relative;
+        
+    }
     p {
         font-family: "Shrikhand";
         font-weight:lighter;
@@ -14,13 +18,13 @@ footer {
         font-size:1.5em;
     }
     
-    ul {
+    ul {        
 
         li {
             display:flex;
             gap:1em;
             color:white;
-            justify-content: flex-start;
+            
             
             i { font-size:1em;
                 width:5%;

@@ -45,8 +45,13 @@ body {
 }
 
 div.partie_principal {
-  padding-left: 15em;
-  padding-right: 15em;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+@media (min-width: 541px) {
+  div.partie_principal {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 540px) {
   div.partie_principal {
@@ -87,11 +92,18 @@ ul {
 
 h5 {
   display: flex;
+  box-sizing: border-box;
+  width: 90%;
   justify-content: space-between;
   margin-right: 1em;
   font-family: "shrikhand";
   padding-top: 1em;
   font-size: 1.6em;
+}
+@media (min-width: 541px) {
+  h5 {
+    padding-top: 0;
+  }
 }
 h5 i {
   margin-top: 0.2em;
@@ -180,13 +192,20 @@ html {
 }
 
 div.photo_resto img {
+  z-index: 0;
   box-sizing: border-box;
   width: 100%;
   height: 18em;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  z-index: 1;
+}
+@media (min-width: 541px) {
+  div.photo_resto img {
+    height: 150em;
+    border-radius: 2em;
+    border: solid;
+  }
 }
 
 footer {
@@ -194,6 +213,13 @@ footer {
   padding-bottom: 2em;
   background-color: black;
   line-height: 1.7em;
+}
+@media (min-width: 541px) {
+  footer {
+    height: 10em;
+    z-index: 2;
+    position: relative;
+  }
 }
 footer p {
   font-family: "Shrikhand";
@@ -206,7 +232,6 @@ footer ul li {
   display: flex;
   gap: 1em;
   color: white;
-  justify-content: flex-start;
 }
 footer ul li i {
   font-size: 1em;
@@ -407,12 +432,12 @@ footer ul li a:visited {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  box-sizing: border-box;
   text-align: center;
+  box-sizing: border-box;
 }
 @media (min-width: 541px) {
   .part2 {
-    border-radius: 2em 2em 0 0;
+    border-radius: 2em;
   }
 }
 
@@ -442,7 +467,7 @@ footer ul li a:visited {
 }
 
 .alignement {
-  margin-top: 6em;
+  margin-top: 2em;
   margin-left: 1.5em;
 }
 @media (min-width: 541px) {
@@ -464,7 +489,7 @@ footer ul li a:visited {
     height: 1.5em;
     border-radius: 2em;
     color: white;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
     box-shadow: 0em 0em 1em 0.5em;
     background: white;
     background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
@@ -510,12 +535,16 @@ span.position {
   flex-direction: column;
   align-items: center;
   margin-top: 3em;
-  padding-bottom: 3em;
-  margin-bottom: 4em;
+  padding-bottom: 4em;
 }
 @media (min-width: 541px) {
   .container_restaurant {
     border-radius: 2em 2em 0 0;
+  }
+}
+@media (min-width: 541px) {
+  .container_restaurant {
+    margin-bottom: 5em;
   }
 }
 @media (max-width: 540px) {
@@ -530,14 +559,19 @@ span.position {
   transform-style: preserve-3d;
   box-sizing: border-box;
   width: 95%;
-  height: 1000px;
-  -webkit-animation: swirl 10s infinite ease-in paused;
-          animation: swirl 10s infinite ease-in paused;
-  transform-origin: center 9.5em;
+  -webkit-animation: swirl 7s infinite ease-in;
+          animation: swirl 7s infinite ease-in;
+  transform-origin: center 6em;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 541px) {
+  .restaurant_wrapper {
+    height: 1000px;
+    margin-top: 4em;
+  }
 }
 @media (max-width: 540px) {
   .restaurant_wrapper {
@@ -545,8 +579,8 @@ span.position {
   }
 }
 .restaurant_wrapper:hover {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 @media (max-width: 540px) {
   .restaurant_wrapper {
@@ -562,13 +596,13 @@ span.position {
   height: 15em;
   display: flex;
   flex-direction: column;
-  border-radius: 1.25em;
   background: white;
   position: absolute;
   transform: rotateX(0deg) translateZ(7.5em);
 }
 @media (max-width: 540px) {
   .box_resto_1 {
+    border-radius: 2em;
     transform: none;
     position: relative;
   }
@@ -579,13 +613,13 @@ span.position {
   height: 15em;
   display: flex;
   flex-direction: column;
-  border-radius: 1.25em;
   background: white;
   position: absolute;
   transform: rotateX(90deg) translateZ(7.5em);
 }
 @media (max-width: 540px) {
   .box_resto_2 {
+    border-radius: 2em;
     transform: none;
     position: relative;
   }
@@ -596,13 +630,13 @@ span.position {
   height: 15em;
   display: flex;
   flex-direction: column;
-  border-radius: 1.25em;
   background: white;
   position: absolute;
   transform: rotateX(180deg) translateZ(7.5em);
 }
 @media (max-width: 540px) {
   .box_resto_3 {
+    border-radius: 2em;
     transform: none;
     position: relative;
   }
@@ -613,13 +647,13 @@ span.position {
   height: 15em;
   display: flex;
   flex-direction: column;
-  border-radius: 1.25em;
   background: white;
   position: absolute;
   transform: rotateX(270deg) translateZ(7.5em);
 }
 @media (max-width: 540px) {
   .box_resto_4 {
+    border-radius: 2em;
     transform: none;
     position: relative;
   }
@@ -658,7 +692,11 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-  border-radius: 1.25em 1.25em 0 0;
+}
+@media (max-width: 540px) {
+  img {
+    border-radius: 2em 2em 0 0;
+  }
 }
 
 #checked {
@@ -676,15 +714,24 @@ img {
 .menu {
   padding-left: 0.6em;
   box-sizing: border-box;
-  transform: translateX(15%);
-  width: 80%;
-  height: auto;
   padding-bottom: 2em;
   margin-top: -5em;
   position: relative;
   z-index: 2;
   border-radius: 2em 2em 0 0;
   background: #f2f2f2;
+}
+@media (min-width: 541px) {
+  .menu {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -95em;
+    font-size: 1.5em;
+    opacity: 0.95;
+    transform: translateX(12%);
+  }
 }
 
 .entrée_1 {
@@ -1031,7 +1078,7 @@ img {
   font-weight: bold;
   margin-top: 2em;
   transform: translateX(120%);
-  transition: transform 600ms ease-in;
+  transition: transform 400ms ease-out;
 }
 .plat_box_achat {
   width: 4em;
@@ -1044,12 +1091,12 @@ img {
   border-radius: 0 1.25em 1.25em 0;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 800ms ease-out;
+  transition: transform 400ms ease-out;
 }
 .plat_box_achat i {
   font-size: 2em;
   color: white;
-  transition: all 800ms ease-out;
+  transition: all 400ms ease-out;
 }
 
 .part_nom_commentaire {
@@ -1072,10 +1119,17 @@ img {
   border-radius: 0 1.25em 1.25em 0;
   right: 4%;
 }
+@media (min-width: 541px) {
+  .part_tarif_box_achat {
+    right: 2%;
+  }
+}
 
 div.commande {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
+  width: 100%;
   margin-bottom: 5em;
   background: #f2f2f2;
   margin-top: 5em;
@@ -1085,18 +1139,17 @@ div.commande {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  border-radius: 2em;
   width: 30%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-animation: btn 1s 3s;
           animation: btn 1s 3s;
   background: white;
   background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
-  border-radius: 2em;
   cursor: pointer;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
-  perspective: 500px;
-  transform: rotate3d(45deg, 45deg, 45deg, 10deg);
 }
 .btn-exploration p {
   align-self: center;
@@ -1105,6 +1158,7 @@ div.commande {
 @media (max-width: 540px) {
   .btn-exploration {
     width: 60%;
+    border-radius: 2em;
   }
 }
 .btn-exploration:active {
@@ -1115,13 +1169,14 @@ div.commande {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  border-radius: 2em;
   width: 30%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-animation: btn 1s 3s;
           animation: btn 1s 3s;
   background: white;
   background: linear-gradient(180deg, white 0%, #ff79da 3%, #353535 140%);
-  border-radius: 2em;
   cursor: pointer;
 }
 .btn-cmd p {
@@ -1131,6 +1186,7 @@ div.commande {
 @media (max-width: 540px) {
   .btn-cmd {
     width: 60%;
+    border-radius: 2em;
   }
 }
 .btn-cmd:active {

@@ -3,9 +3,9 @@
     @mixin main_container {
         display:flex;
         flex-direction: column;
-        background-color:$color-container-primary;
-        box-sizing: border-box;                      
+        background-color:$color-container-primary;                             
         text-align: center;
+        box-sizing: border-box;       
     }
 
 
@@ -13,19 +13,24 @@
     display:flex;
     justify-content: center;
     align-items:center;
-    width:30%;  
+    box-sizing:border-box;
+    border-radius:2em;
+     width:30%;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     animation:btn 1s 3s;
       & p {
         align-self:center;
         color:white;
       }   
+
     @include color-secondary-gradiant;
-    border-radius:2em;
+   
     cursor: pointer;
     @include mobile {
         width:60%;
+        border-radius:2em;
     }
+    
         &:active {
             transform:scale(1.05);
         }
@@ -93,10 +98,11 @@
         height:15em;
         display:flex;
         flex-direction: column;
-        border-radius:1.25em;
+        
         background: white;    
         position:absolute;     
         @include mobile {
+            border-radius:2em;
             transform:none;
             position:relative;
             

@@ -10,9 +10,12 @@ body {
 }
 div.partie_principal {
   
-   
- padding-left:15em;
-  padding-right: 15em;
+  
+ padding-left:10em;
+  padding-right: 10em;
+  @include desktop {
+    font-size:1.2em;
+  }
   
   
   @include mobile {
@@ -58,11 +61,16 @@ ul {
 
 h5 {
   display:flex;
+  box-sizing: border-box;
+  width:90%;
   justify-content: space-between;
   margin-right:1em;
   font-family: "shrikhand";  
   padding-top:1em;
   font-size:1.6em;
+  @include desktop {
+    padding-top:0;
+  }
   i {
     margin-top:0.2em;
   }

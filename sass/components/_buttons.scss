@@ -3,8 +3,8 @@
     @include btn;    
     margin-bottom:1.5em;
     margin-top: 1.5em;  
-   perspective:500px;
-    transform: rotate3d(45deg,45deg,45deg,10deg);
+   
+   
   
 
 }
@@ -13,8 +13,8 @@
 
 .btn-cmd {
     
-    @include btn;    
-    
+    @include btn;   
+   
 }
 
 .btn_fonction {
