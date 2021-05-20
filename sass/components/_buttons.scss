@@ -15,20 +15,18 @@
 
     &_choix {
         @include container_fonctionnement;       
-        animation:fadein_left 3s 6.5s forwards ;      
-       
-            }
-
+        animation:fadein_left 3s 5s forwards ;      
+    }
     &_composition {
               
         @include container_fonctionnement;        
-        animation:fadein_center 3s 6.5s ;
+        animation:fadein_center 3s 5s ;
             
     }
 
     &_degustation {
         @include container_fonctionnement;
-        animation:fadein_right 3s 6.5s forwards;
+        animation:fadein_right 3s 5s forwards;
         
     }
        

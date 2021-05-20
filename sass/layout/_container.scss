@@ -57,11 +57,9 @@
     }
 }
 
-.container_fonctionnement {
-  
+.container_fonctionnement {  
    
-    margin-right:0.5em; 
-   
+    margin-right:0.5em;    
    
     ul {    
     display: flex;
@@ -116,7 +114,11 @@ span.position {
         perspective:0px;
         background: $color-container-primary;
     }
-   
+   @include tablette {        
+        height:100%;
+        perspective:0px;
+        background: $color-container-primary;
+    }
    
     
     
@@ -128,11 +130,7 @@ span.position {
     width:95%;
     @include desktop {
     height:1000px;
-    margin-top:4em;}
-    
-    @include mobile {
-        height:100%;
-    }
+    margin-top:4em;}  
    
     animation:swirl 7s  infinite ease-in  ;    
     transform-origin: center 6em ;        
@@ -147,9 +145,14 @@ span.position {
 
     @include mobile {
         animation:none;
-        gap:2em;        
+        gap:2em;  
+        height:100%;      
     }
-    
+    @include tablette {
+        animation:none;
+        gap:2em;  
+        height:100%;  
+    }
 }
 
 .box_resto {
@@ -213,8 +216,10 @@ span.position {
              height:11em;
              object-fit: cover;
             overflow: hidden;
-            @include mobile {
-             border-radius:2em 2em 0 0;}
+            
+                border-radius:2em 2em 0 0;
+           
+             
      }
     
 

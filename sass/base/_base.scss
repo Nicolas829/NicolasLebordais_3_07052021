@@ -5,12 +5,10 @@ body {
     margin-right:auto;      
     
     @include color_bg;
-    @include mobile {animation:none; background: white;}
-    
-    
-    
+     @include mobile {background:white;}
     
 }
+
 div.partie_principal {  
   padding-left:10em;
   padding-right: 10em;
@@ -21,16 +19,22 @@ div.partie_principal {
   @include desktop {
     font-size:1.2em;
   }
-  &_index {
-  padding-left:10em;
-  padding-right: 10em;
+  @include tablette {
+    padding:0px;
+  }
+  &_index { 
   
   @include desktop {
     font-size:1.2em;
+    padding-left:10em;
+    padding-right: 10em;
   }
   @include mobile {
-    padding:0px;
+    padding:0;
     background-color: white;    
+  }
+   @include tablette {
+    padding:0px;
   }
 }
   

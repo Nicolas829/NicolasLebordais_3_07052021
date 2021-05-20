@@ -60,7 +60,13 @@
     }
 
     @mixin desktop {
-        @media (min-width:541px) {
+        @media (min-width:769px) {
+            @content;
+        }
+    }
+
+    @mixin tablette {
+        @media (min-width:541px) and (max-width:769px){
             @content;
         }
     }
@@ -85,10 +91,19 @@
             background-clip:text;
             -webkit-text-fill-color: transparent;
           }
+         @include mobile { 
         &:active {
             background: $color-primary-light ;
             opacity:0.4;
-          }                 
+          }               }
+          @include desktop {
+        &:hover{
+                background: $color-primary-light ;
+            opacity:0.4;
+           
+            transition-duration:300ms;
+            }
+          }  
     }
 
 
@@ -98,14 +113,18 @@
         height:15em;
         display:flex;
         flex-direction: column;
-        
+        border-radius:2em;
         background: white;    
         position:absolute;     
         @include mobile {
-            border-radius:2em;
+            
             transform:none;
             position:relative;
             
+            }
+            @include tablette {
+                transform:none;
+                position:relative;
             }
     }
 
