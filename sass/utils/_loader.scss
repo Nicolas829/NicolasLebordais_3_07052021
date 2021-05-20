@@ -1,4 +1,124 @@
 
+  
+  div.partie_principal_index {
+    @include desktop {
+  
+   margin-top:-82em;
+    position:relative;
+    z-index: -1;
+    
+    }
+  }
+  footer {
+    @include desktop {
+      
+      position:relative;
+    z-index: -2;
+    }
+  }
+  .loader {
+    @include mobile {
+      display:none;
+    }
+  }
 
   
+
+
+  .loader {
+    @include desktop {      
+      perspective:600px;
+      transform-style: preserve-3d; 
+    display:flex;
+    justify-content: center;  
+    align-items: center;      
+    position:relative;       
+    z-index:1;   
+    box-sizing: border-box;
+    height:100em;
+    
+  }      
+    &_1 {
+      
+    box-sizing:border-box;
+    width:100%;
+    height:100%;
+    background: rgb(255,255,255);
+background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,121,218,1) 120%);
+animation:door_left 2s 4.5s  ease-in-out forwards;
+    
+    }
+    &_2 {
+      
+    box-sizing:border-box;
+    width:100%;
+    height:100%;
+    display: flex;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,121,218,1) 120%);
+animation:door_right 2s 4.5s ease-in-out forwards;
+    
+    }
+    
+     .particles_box_2 {
+       box-sizing:border-box;
+       display:flex;   
+       justify-content: center;                
+       font-size:9em;
+       z-index:1;       
+       transform-style: preserve-3d;      
+       
+       position: absolute;      
+       z-index:4;           
+       width:auto;  
+     
+     }
+
+     
+     /*partie loader LETTRES */
+     @for $i from 1 through 12 {     
+      
+      .particles_box_2_#{$i} {
+       
+       width:1.11em ;
+       text-align:center;       
+      transform:translateZ(60px) translateY(-150%);  
+        transform-origin: top; 
+        @include color_secondary-gradiant;
+       background-clip:text;
+       -webkit-text-fill-color: transparent; 
+       animation:wave 1s 4 100ms+$i*100ms  ease-in-out alternate-reverse  ;   
+       opacity:0; 
+     
+      }}             
+
+  }
+
+@keyframes wave {
+  0% {transform:translateZ(60px) translateX(0)translateY(-150%) ;opacity:1;}
+  
+  100% {transform:translateZ(-60px) translateX(150%)translateY(-250%);opacity:0;}
+  
+  
+}
+
+@keyframes door_right {
+  from {transform:translateX(0);}
+  to {transform:translateX(200%);}
+}
+@keyframes door_left {
+  from {transform:translateX(0);}
+  to {transform:translateX(-200%);}
+}
+  
+  
+  @keyframes body {
+    0% {opacity:0;}
+    20%{opacity:0;}
+    40%{opacity:0;}
+    60%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
   

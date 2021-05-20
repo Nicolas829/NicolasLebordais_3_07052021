@@ -10,3 +10,17 @@ h1 {
 html {
     font-family:map-get($font-family, text )
 }
+
+.loader {
+    .particles_box {
+    
+    &_1 
+    {
+        font-family:"Shrikhand";
+    }
+    &_2{
+        font-family:"Shrikhand";
+    }
+    &_3
+    {font-family:"Shrikhand";}
+}}

@@ -7,23 +7,34 @@ body {
     @include color_bg;
     @include mobile {animation:none; background: white;}
     
+    
+    
+    
 }
-div.partie_principal {
-  
-  
- padding-left:10em;
+div.partie_principal {  
+  padding-left:10em;
   padding-right: 10em;
+  @include mobile {
+    padding:0px;
+    background-color: white;    
+  }  
   @include desktop {
     font-size:1.2em;
   }
+  &_index {
+  padding-left:10em;
+  padding-right: 10em;
   
-  
+  @include desktop {
+    font-size:1.2em;
+  }
   @include mobile {
     padding:0px;
-    background-color: white;
-    
+    background-color: white;    
   }
-
+}
+  
+ 
 }
 h2 {
   @include mobile {
