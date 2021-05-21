@@ -15,12 +15,20 @@
         height:8em;
         justify-content:center;
     }
+    @include tablette {
+        height:5em;
+        justify-content: center;
+    }
    
     i {
         margin-left:1.5em;
         @include desktop {
             margin-left:-15em;
            font-size:1.5em;
+        }
+        @include tablette{
+            margin-left:-9em;
+            font-size:1.5em;
         }
     
     } 
@@ -44,9 +52,12 @@ div.photo_resto {
         object-fit: cover;
         position:relative;
        @include desktop {
-           height:150em;
+           height:100em;
            border-radius:2em;
-           border:solid;
+          z-index:1;
+          
+
+           
        }
     }
 }

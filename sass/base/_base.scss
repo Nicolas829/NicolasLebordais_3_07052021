@@ -5,8 +5,9 @@ body {
     margin-right:auto;      
     
     @include color_bg;
-     @include mobile {background:white;}
     
+     @include mobile {background:white;}
+     @include tablette {background:white;}
 }
 
 div.partie_principal {  
@@ -79,15 +80,19 @@ h5 {
   box-sizing: border-box;
   width:90%;
   justify-content: space-between;
+  padding-left:0.6em;
   margin-right:1em;
   font-family: "shrikhand";  
   padding-top:1em;
   font-size:1.6em;
   @include desktop {
     padding-top:0;
+    justify-self: space-around;
+    font-size:2em;
   }
   i {
     margin-top:0.2em;
+    color:$color_icone;
   }
   
 }
@@ -96,6 +101,8 @@ h6 {
   font-weight:lighter;
   text-transform: uppercase;
   margin-bottom: 1.5em;  
+  align-self:flex-start;
+  padding-left:0.6em;
  
 }
 
@@ -105,6 +112,8 @@ h6 {
   margin-top:-1em;
   margin-bottom:1.5em;
   color:$color-tertiary;
+  align-self:flex-start;
+  margin-left:0.6em;
 }
 
 div.titre_resto {
@@ -113,6 +122,10 @@ div.titre_resto {
   box-sizing: border-box;
   width:90%;
   height:100%;
+  @include desktop {
+    justify-content: center;
+    width:100%;
+  }
   
 }
 
@@ -121,14 +134,18 @@ div.titre_resto {
 h4 {
   font-size:1.5em;
   @include desktop {
-  text-align:center;  
-  box-sizing: border-box;
-  width:100%;
-  height:1.5em;
-  border-radius:2em;
-  color:white;
-  box-shadow: 0em 0em 1em 0.5em;
-  @include color-secondary-gradiant;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    box-sizing: border-box;
+    width:70%;
+    height:1.5em;
+    border-radius: 0.5em;
+    color:white;
+    margin-bottom:1.5em;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+@include color-secondary-gradiant;
   }
   
    

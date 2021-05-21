@@ -2,12 +2,18 @@ footer {
       
     padding-top:1em;
     padding-bottom:2em;    
-    background-color:black;
+    background-color:$color_footer;
     line-height:1.7em;
     @include desktop {
-        height:10em;
+        
        z-index: 2;
        position:relative;
+       display:flex;
+       flex-direction: column;
+       padding-left:10em;
+      align-items: flex-start;
+
+     
         
     }
     p {
@@ -24,6 +30,7 @@ footer {
             display:flex;
             gap:1em;
             color:white;
+                  
             
             
             i { font-size:1em;

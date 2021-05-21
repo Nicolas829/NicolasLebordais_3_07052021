@@ -2,14 +2,30 @@ $color-primary: #9356DC;
 $color-primary-light: #bfa7dd;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-tertiary-dark:#33b595;
 $color-container-primary:#f2f2f2;
-$color-container-secondary:rgb(199, 191, 191);
+$color-container-secondary:#e4e4e4;
 $delay_accueil:6s;
+$color_footer:#353535;
+$color_icone:#808080;
 
 
+/*taille*/
 
+$size_radius:1.25em ;
+
+
+/*durée*/
+
+$animation_fadein_duration:400ms;
+$animation_fadein_delay:100ms;
 
 $font-family: (
    title:'Shrikhand',
    text: 'Roboto', 
 );
+
+/*localisation #e4e4e4;
+btn explorer linear-gradient(#ff79da 0%, #9356dc 100%);
+couleur background footer /  #353535 */
+
