@@ -355,7 +355,7 @@ span.position {
       font-weight: bold;     
       margin-top:2em;
       transform: translateX(120%);
-      transition: transform 400ms ease-out;
+      transition: transform 200ms ease-out;
      
     }
     &_box_achat {
@@ -370,12 +370,12 @@ span.position {
     border-radius:0 1.25em 1.25em 0;   
     transform: scaleX(0);
     transform-origin:right;
-    transition: transform 400ms ease-out;
+    transition: transform 200ms ease-in-out;
     
     i {
         font-size:2em;  
        color:white;
-       transition: all 400ms ease-out ;
+       transition: all 200ms ease-in-out;
       
     }
 }
@@ -387,7 +387,7 @@ span.position {
     flex-direction: column;
     width:75%;
     padding-left:0.5em;    
-    transition: width 300ms ease-out;
+    transition: width 200ms ease-in-out;
     
 }
 

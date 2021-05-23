@@ -1,4 +1,4 @@
-@for $i from 1 through 4 {
+@for $i from 1 through 8 {
 
     #checked_#{$i} {   
         @include color-secondary-gradiant;
