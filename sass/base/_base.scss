@@ -11,6 +11,7 @@ body {
 }
 
 div.partie_principal {  
+  
   padding-left:10em;
   padding-right: 10em;
   @include mobile {
@@ -52,7 +53,7 @@ header div p {
    
 }
 
-div bouton p {
+div .btn-exploration p {
  
   width:100%;
 }
@@ -67,9 +68,7 @@ a {
   }
 }
 
-ul {
-  list-style: none; 
-}
+
 
 .position {
   color:white;

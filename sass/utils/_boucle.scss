@@ -1,0 +1,19 @@
+@for $i from 1 through 4 {
+
+    #checked_#{$i} {   
+        @include color-secondary-gradiant;
+        
+        background-clip:text;
+        -webkit-text-fill-color: transparent;   
+        display:none;
+    }
+    #unchecked_#{$i} {
+        &:active {
+            display:none;
+        }
+        &:active + #checked_#{$i}{
+            display: block;
+             
+        }
+        
+    }}
