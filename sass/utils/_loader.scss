@@ -1,25 +1,45 @@
-
+body {
   
-  div.partie_principal_index {
-  margin-top:-150em;
+ 
+ 
+}
   
-  animation:display 0.5s 5.5s forwards;
-
+  div.partie_principal_index { 
+  
+    
+    overflow:hidden;
   @include desktop {
-   margin-top:-125em;}  
-
-   @include tablette {
-     margin-top:-150em;
-   }
+    height:50em;
+    overflow:hidden;
+   margin-top:-50em;}  
+   
     position:relative;
     z-index: -1;
-    animation:display 0.5s 5.5s forwards;
+    @include mobile {
+      height:20em;
+      animation: size_change 0.1s 5150ms forwards;}
+    @include tablette {
+      height:20em;
+      animation: size_change 0.1s 5150ms forwards;
+    }
+    @include desktop {
+      animation:display 0.5s 5.5s forwards ;
+    }
+   
     
   }
   footer {   
-      
-    position:relative;
+    opacity:0;
     z-index: 2;
+    @include mobile {
+    animation: size_change 0.01s 5250ms forwards;}
+    @include desktop {
+      animation:display 0.5s 5.5s forwards ;
+    }
+    @include tablette {
+      height:20em;
+      animation: size_change 0.01s 5250ms forwards;
+    }
     
   }
   .loader {
@@ -34,12 +54,14 @@
   .loader_mobile {
     
     
-    position:relative;
+    position:absolute;
     display:flex;
     justify-content: center;
     z-index:3;
     font-family: "Shrikhand";
-    height:150em;
+    box-sizing: border-box;    
+    width:100%;
+    height:42em;
     perspective:600px;
     transform-style: preserve-3d; 
     animation:scale 0.5s 5s forwards;
@@ -47,7 +69,7 @@
     @include color-secondary-gradiant;    
    
     @include tablette {
-      height:150em;
+      height:65em;
     }
 
 
@@ -59,10 +81,12 @@
   @for $i from 0 through 7 {
 
     .loader_logo_#{$i} {
-     
+     display:flex;
+     align-self:center;
      font-size:3em;
+    margin-bottom:4em;
       text-align:center;       
-     transform:translateZ(60px) translateY(10%);   
+     transform:translateZ(60px) ;   
       animation:wave_mobile 950ms 4 100ms+$i*100ms  ease-in-out alternate-reverse  ;   
       opacity:0;
       @include color_secondary-gradiant;
@@ -70,18 +94,20 @@
       -webkit-text-fill-color: transparent; 
       @include tablette{
         font-size:5em;
+        bottom:0em;
+        
       }
          
   }}
   
  .loader_heart_2 {    
-
-  
+ 
     display:flex;
-   justify-content: center;
+   
+    margin-top:4em;
      position:absolute;
     right:3.5em;
-    margin-top:-45em;
+    top:1.5em;
     font-size:3em;
      z-index:100;    
      opacity:0;
@@ -94,19 +120,15 @@
      }
      @include tablette {
        font-size:5em;
-       margin-top:-25em;
        right:4em;
+       margin-top:5em;
 
        
      }
       
      
   }
-   
- 
-   
-  
-    
+       
 
 
   .loader {
@@ -120,7 +142,7 @@
     position:relative;       
     z-index:3;   
     box-sizing: border-box;
-    height:150em;
+    height:60em;
     
     
     }      
@@ -209,8 +231,15 @@ transform-origin:right;}
 
 
 @keyframes display {
-  from {z-index:-1;}
-  to {z-index:4; }
+  from {z-index:-1;overflow:hidden;  height:60em;  }
+  to {z-index:4;overflow:visible;  opacity:1; height:auto;}
+}
+
+@keyframes size_change {
+  from {overflow:hidden; height:20em;z-index:-1; 
+    }
+    to {overflow:visible; height:auto;opacity:1;z-index:4;
+    }
 }
 @keyframes scale {
 
