@@ -484,61 +484,28 @@ footer ul li a:visited {
     transform: rotateX(360deg);
   }
 }
-div.partie_principal_index {
+#index {
   overflow: hidden;
+  -webkit-animation: size_change 0.5s 5.5s forwards;
+          animation: size_change 0.5s 5.5s forwards;
+}
+
+div.partie_principal_index {
   position: relative;
   z-index: -1;
+  -webkit-animation: display 0.5s 5.5s forwards;
+          animation: display 0.5s 5.5s forwards;
 }
 @media (min-width: 769px) {
   div.partie_principal_index {
-    height: 50em;
-    overflow: hidden;
-    margin-top: -50em;
-  }
-}
-@media (max-width: 540px) {
-  div.partie_principal_index {
-    height: 20em;
-    -webkit-animation: size_change 0.1s 5150ms forwards;
-            animation: size_change 0.1s 5150ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  div.partie_principal_index {
-    height: 20em;
-    -webkit-animation: size_change 0.1s 5150ms forwards;
-            animation: size_change 0.1s 5150ms forwards;
-  }
-}
-@media (min-width: 769px) {
-  div.partie_principal_index {
-    -webkit-animation: display 0.5s 5.5s forwards;
-            animation: display 0.5s 5.5s forwards;
+    margin-top: -80em;
   }
 }
 
 footer {
-  opacity: 0;
   z-index: 2;
-}
-@media (max-width: 540px) {
-  footer {
-    -webkit-animation: size_change 0.01s 5250ms forwards;
-            animation: size_change 0.01s 5250ms forwards;
-  }
-}
-@media (min-width: 769px) {
-  footer {
-    -webkit-animation: display 0.5s 5.5s forwards;
-            animation: display 0.5s 5.5s forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  footer {
-    height: 20em;
-    -webkit-animation: size_change 0.01s 5250ms forwards;
-            animation: size_change 0.01s 5250ms forwards;
-  }
+  -webkit-animation: display 0.5s 5.5s forwards;
+          animation: display 0.5s 5.5s forwards;
 }
 
 @media (max-width: 540px) {
@@ -560,7 +527,7 @@ footer {
   font-family: "Shrikhand";
   box-sizing: border-box;
   width: 100%;
-  height: 50em;
+  height: 45em;
   perspective: 600px;
   transform-style: preserve-3d;
   -webkit-animation: scale 0.5s 5s forwards;
@@ -580,12 +547,10 @@ footer {
 }
 
 .loader_logo_0 {
-  display: flex;
-  align-self: center;
   font-size: 3em;
-  margin-bottom: 4em;
+  margin-top: 3em;
   text-align: center;
-  transform: translateZ(60px);
+  transform: translateZ(60px) translateY(10%);
   animation: wave_mobile 950ms 4 100ms ease-in-out alternate-reverse;
   opacity: 0;
   background: white;
@@ -597,17 +562,15 @@ footer {
 @media (min-width: 541px) and (max-width: 769px) {
   .loader_logo_0 {
     font-size: 5em;
-    bottom: 0em;
+    margin-top: 2em;
   }
 }
 
 .loader_logo_1 {
-  display: flex;
-  align-self: center;
   font-size: 3em;
-  margin-bottom: 4em;
+  margin-top: 3em;
   text-align: center;
-  transform: translateZ(60px);
+  transform: translateZ(60px) translateY(10%);
   animation: wave_mobile 950ms 4 200ms ease-in-out alternate-reverse;
   opacity: 0;
   background: white;
@@ -619,17 +582,15 @@ footer {
 @media (min-width: 541px) and (max-width: 769px) {
   .loader_logo_1 {
     font-size: 5em;
-    bottom: 0em;
+    margin-top: 2em;
   }
 }
 
 .loader_logo_2 {
-  display: flex;
-  align-self: center;
   font-size: 3em;
-  margin-bottom: 4em;
+  margin-top: 3em;
   text-align: center;
-  transform: translateZ(60px);
+  transform: translateZ(60px) translateY(10%);
   animation: wave_mobile 950ms 4 300ms ease-in-out alternate-reverse;
   opacity: 0;
   background: white;
@@ -641,17 +602,15 @@ footer {
 @media (min-width: 541px) and (max-width: 769px) {
   .loader_logo_2 {
     font-size: 5em;
-    bottom: 0em;
+    margin-top: 2em;
   }
 }
 
 .loader_logo_3 {
-  display: flex;
-  align-self: center;
   font-size: 3em;
-  margin-bottom: 4em;
+  margin-top: 3em;
   text-align: center;
-  transform: translateZ(60px);
+  transform: translateZ(60px) translateY(10%);
   animation: wave_mobile 950ms 4 400ms ease-in-out alternate-reverse;
   opacity: 0;
   background: white;
@@ -663,17 +622,15 @@ footer {
 @media (min-width: 541px) and (max-width: 769px) {
   .loader_logo_3 {
     font-size: 5em;
-    bottom: 0em;
+    margin-top: 2em;
   }
 }
 
 .loader_logo_4 {
-  display: flex;
-  align-self: center;
   font-size: 3em;
-  margin-bottom: 4em;
+  margin-top: 3em;
   text-align: center;
-  transform: translateZ(60px);
+  transform: translateZ(60px) translateY(10%);
   animation: wave_mobile 950ms 4 500ms ease-in-out alternate-reverse;
   opacity: 0;
   background: white;
@@ -685,17 +642,15 @@ footer {
 @media (min-width: 541px) and (max-width: 769px) {
   .loader_logo_4 {
     font-size: 5em;
-    bottom: 0em;
+    margin-top: 2em;
   }
 }
 
 .loader_logo_5 {
-  display: flex;
-  align-self: center;
   font-size: 3em;
-  margin-bottom: 4em;
+  margin-top: 3em;
   text-align: center;
-  transform: translateZ(60px);
+  transform: translateZ(60px) translateY(10%);
   animation: wave_mobile 950ms 4 600ms ease-in-out alternate-reverse;
   opacity: 0;
   background: white;
@@ -707,17 +662,15 @@ footer {
 @media (min-width: 541px) and (max-width: 769px) {
   .loader_logo_5 {
     font-size: 5em;
-    bottom: 0em;
+    margin-top: 2em;
   }
 }
 
 .loader_logo_6 {
-  display: flex;
-  align-self: center;
   font-size: 3em;
-  margin-bottom: 4em;
+  margin-top: 3em;
   text-align: center;
-  transform: translateZ(60px);
+  transform: translateZ(60px) translateY(10%);
   animation: wave_mobile 950ms 4 700ms ease-in-out alternate-reverse;
   opacity: 0;
   background: white;
@@ -729,17 +682,15 @@ footer {
 @media (min-width: 541px) and (max-width: 769px) {
   .loader_logo_6 {
     font-size: 5em;
-    bottom: 0em;
+    margin-top: 2em;
   }
 }
 
 .loader_logo_7 {
-  display: flex;
-  align-self: center;
   font-size: 3em;
-  margin-bottom: 4em;
+  margin-top: 3em;
   text-align: center;
-  transform: translateZ(60px);
+  transform: translateZ(60px) translateY(10%);
   animation: wave_mobile 950ms 4 800ms ease-in-out alternate-reverse;
   opacity: 0;
   background: white;
@@ -751,16 +702,16 @@ footer {
 @media (min-width: 541px) and (max-width: 769px) {
   .loader_logo_7 {
     font-size: 5em;
-    bottom: 0em;
+    margin-top: 2em;
   }
 }
 
 .loader_heart_2 {
   display: flex;
-  margin-top: 4em;
+  justify-content: center;
   position: absolute;
   right: 3.5em;
-  top: 1.5em;
+  margin-top: 7em;
   font-size: 3em;
   z-index: 100;
   opacity: 0;
@@ -797,7 +748,7 @@ footer {
     position: relative;
     z-index: 3;
     box-sizing: border-box;
-    height: 60em;
+    height: 100em;
   }
 }
 @media (min-width: 769px) {
@@ -1108,53 +1059,33 @@ footer {
 @-webkit-keyframes display {
   from {
     z-index: -1;
-    overflow: hidden;
-    height: 60em;
   }
   to {
     z-index: 4;
-    overflow: visible;
-    opacity: 1;
-    height: auto;
   }
 }
 @keyframes display {
   from {
     z-index: -1;
-    overflow: hidden;
-    height: 60em;
   }
   to {
     z-index: 4;
-    overflow: visible;
-    opacity: 1;
-    height: auto;
   }
 }
 @-webkit-keyframes size_change {
   from {
     overflow: hidden;
-    height: 20em;
-    z-index: -1;
   }
   to {
     overflow: visible;
-    height: auto;
-    opacity: 1;
-    z-index: 4;
   }
 }
 @keyframes size_change {
   from {
     overflow: hidden;
-    height: 20em;
-    z-index: -1;
   }
   to {
     overflow: visible;
-    height: auto;
-    opacity: 1;
-    z-index: 4;
   }
 }
 @-webkit-keyframes scale {
