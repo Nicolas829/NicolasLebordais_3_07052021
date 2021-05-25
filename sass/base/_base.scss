@@ -67,28 +67,32 @@ a {
   }
 }
 
-
+button {
+  border:none;
+  font-size:1.1em;
+}
 
 .position {
   color:white;
 }
 
-h5 {
+.titre_page {
   display:flex;
   box-sizing: border-box;
   width:90%;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
+  align-items:center;
   padding-right:1em;
   font-family: "shrikhand";  
-  padding-top:1em;
+  
   font-size:1.6em;
   
   @include desktop {
     padding-top:0;
-    justify-self: space-around;
+      
     font-size:2em;
   }
+  
   i {
     margin-top:0.2em;
     color:$color_icone;

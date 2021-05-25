@@ -168,7 +168,7 @@ transform-origin:right;}
         @include color_secondary-gradiant;
        background-clip:text;
        -webkit-text-fill-color: transparent; 
-       animation:wave 1s 4 100ms+$i*100ms  ease-in-out alternate-reverse running  ;   
+       animation:wave 1s 4 100ms+$i*100ms  ease-in-out alternate-reverse   ;   
        opacity:0; }
         
       }}             

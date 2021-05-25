@@ -111,28 +111,32 @@ a:visited {
   color: black;
 }
 
+button {
+  border: none;
+  font-size: 1.1em;
+}
+
 .position {
   color: white;
 }
 
-h5 {
+.titre_page {
   display: flex;
   box-sizing: border-box;
   width: 90%;
   justify-content: space-between;
+  align-items: center;
   padding-right: 1em;
   font-family: "shrikhand";
-  padding-top: 1em;
   font-size: 1.6em;
 }
 @media (min-width: 769px) {
-  h5 {
+  .titre_page {
     padding-top: 0;
-    justify-self: space-around;
     font-size: 2em;
   }
 }
-h5 i {
+.titre_page i {
   margin-top: 0.2em;
   color: #808080;
 }
@@ -190,8 +194,6 @@ h4 {
   }
 }
 
-@font-family : "Roboto", sans-serif;
-@font-family : "Shrikhand", cursive;
 h1 {
   font-family: "Shrikhand";
 }
@@ -923,7 +925,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 200ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 200ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -937,7 +939,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 300ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 300ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -951,7 +953,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 400ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 400ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -965,7 +967,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 500ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 500ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -979,7 +981,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 600ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 600ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -993,7 +995,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 700ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 700ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -1007,7 +1009,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 800ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 800ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -1021,7 +1023,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 900ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 900ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -1035,7 +1037,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 1000ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 1000ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -1049,7 +1051,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 1100ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 1100ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -1063,7 +1065,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 1200ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 1200ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -1077,7 +1079,7 @@ div.partie_principal_index {
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: wave 1s 4 1300ms ease-in-out alternate-reverse running;
+    animation: wave 1s 4 1300ms ease-in-out alternate-reverse;
     opacity: 0;
   }
 }
@@ -1747,14 +1749,14 @@ span.position {
 @media (max-width: 540px) {
   .container_restaurant {
     height: 100%;
-    perspective: 0px;
+    perspective: none;
     background: #f2f2f2;
   }
 }
 @media (min-width: 541px) and (max-width: 769px) {
   .container_restaurant {
     height: 100%;
-    perspective: 0px;
+    perspective: none;
     background: #f2f2f2;
   }
 }

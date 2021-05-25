@@ -101,12 +101,12 @@ span.position {
   
     @include mobile {        
         height:100%;
-        perspective:0px;
+        perspective:none;
         background: $color-container-primary;
     }
    @include tablette {        
         height:100%;
-        perspective:0px;
+        perspective:none;
         background: $color-container-primary;
     }
    
