@@ -2,9 +2,8 @@
 body {     
     margin:0;         
     margin-left: auto;
-    margin-right:auto;      
+    margin-right:auto;          
     
-    @include color_bg;
     
      @include mobile {background:white;}
      @include tablette {background:white;}
