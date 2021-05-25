@@ -518,18 +518,22 @@ footer ul li a:visited {
 }
 @-webkit-keyframes icone_check {
   from {
+    opacity: 1;
     transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }
 @keyframes icone_check {
   from {
+    opacity: 1;
     transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }
 @-webkit-keyframes box_achat {
@@ -2094,6 +2098,7 @@ img {
 .plat_box_achat i {
   font-size: 2em;
   color: white;
+  opacity: 0;
 }
 
 .part_nom_commentaire {

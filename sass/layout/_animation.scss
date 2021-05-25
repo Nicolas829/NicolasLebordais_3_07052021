@@ -71,8 +71,8 @@
 }
 
 @keyframes icone_check {
-    from {transform:rotate(0);}
-    to {transform:rotate(360deg);}
+    from {opacity:1;transform:rotate(0);}
+    to {transform:rotate(360deg);opacity:1;}
 }
 @keyframes box_achat {
     from{}
