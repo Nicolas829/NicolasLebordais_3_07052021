@@ -5,15 +5,40 @@
         
         background-clip:text;
         -webkit-text-fill-color: transparent;   
-        display:none;
+        opacity:0;
+        z-index:0;
+        transform-origin: center;
     }
-    #unchecked_#{$i} {
+    #unchecked_#{$i}    {
+        z-index:1;
+       position:absolute;
+       
+       @include mobile {
         &:hover {
-            display:none;
+            animation:fill_heart_2 10ms forwards ;
         }
         &:hover + #checked_#{$i}{
-            display: block;
-             
+           animation:fill_heart_1 500ms forwards;
+                        
+        }}
+
+        @include desktop {
+            &:hover {
+                animation:fill_heart_2  300ms forwards;}
+            &:hover + #checked_#{$i}{
+                animation:fill_heart_1 300ms forwards;
+                             
+             }
+        }
+        @include tablette {
+            &:hover {
+                animation:fill_heart_2  10ms forwards;}
+            &:hover + #checked_#{$i}{
+                animation:fill_heart_1 300ms forwards;
+                             
+             }
         }
         
     }}
+
+    

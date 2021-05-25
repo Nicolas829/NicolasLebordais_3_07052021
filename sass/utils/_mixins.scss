@@ -158,8 +158,10 @@
         background:white;
         box-sizing: border-box;        
         width:95%;
-        border-radius:1.25em;
-        height:4em;
+        border-radius:1.25em;        
+        height:auto;
+        padding-bottom:0.7em;
+        padding-top:0.7em;
         margin-bottom:1em;
         opacity:0;
       
@@ -168,19 +170,23 @@
         &:hover > .part_tarif_box_achat {
 
             & > .plat_box_achat {
-                animation:box_achat 400ms ease forwards;
+                animation:box_achat 600ms ease forwards;
               & > i {
-                animation:icone_check 400ms ease forwards;
+                animation:icone_check 600ms ease forwards;
               }
-       }
+       }    
+            
            & > .plat_tarif {
             
-            animation:tarif 400ms ease forwards;
+            animation:tarif 600ms ease forwards;
        }
+       
     }
         &:hover> .part_nom_commentaire {
           
-            animation:commentaire 400ms ease forwards ;     
+            & > .plat_nom {animation:nom_plat 600ms ease forwards ; }
+            
+            & > .plat_commentaire {animation:commentaire 600ms ease forwards ; }   
         
     }
 }

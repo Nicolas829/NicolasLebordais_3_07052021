@@ -245,7 +245,7 @@ span.position {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top:-97em;    
+    
     font-size:1em;
     opacity:0.95;
     transform:translateX(22%);
@@ -333,16 +333,21 @@ span.position {
 
     &_nom {     
       font-weight:bold;     
-      font-size:1em;
-        white-space:nowrap;
+      font-size:1.1em;
+      width:75%;
+        
+        overflow:hidden;
+        text-overflow:ellipsis; 
     }
 
     &_commentaire {
         margin-top:0.3em; 
-        font-size:0.9em;
+        font-size:0.86em;
         white-space: nowrap;   
         overflow:hidden;
         text-overflow:ellipsis; 
+       width:73%;
+       
        
     }
     
@@ -351,7 +356,7 @@ span.position {
       position:sticky;
       font-weight: bold;     
       margin-top:2em;
-      transform:translateX(120%);
+      transform:translateX(180%);
       
      
     }
@@ -359,6 +364,7 @@ span.position {
     
     width:0em;
     height:4em;
+    box-sizing: border-box;
     background-color:$color-tertiary ;
     color:$color-tertiary;    
     display:flex;
@@ -382,7 +388,7 @@ span.position {
 .part_nom_commentaire {
     display: flex;
     flex-direction: column;
-    width:75%;
+    width:100%;
     padding-left:0.5em;    
     
     
@@ -395,7 +401,7 @@ span.position {
     justify-content: space-between;
     gap:0.5em;
     box-sizing: content-box;    
-    width:25%;
+    width:30%;
     position:absolute;
     overflow:hidden;
     border-radius:0 1.25em 1.25em 0;

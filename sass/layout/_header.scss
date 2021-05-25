@@ -51,14 +51,7 @@ div.photo_resto {
         height:18em;
         object-fit: cover;
         position:relative;
-       @include desktop {
-           height:100em;
-           border-radius:2em;
-          z-index:1;
-          
-
-           
-       }
+      
     }
 }
 

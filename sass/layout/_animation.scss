@@ -66,7 +66,7 @@
 }
 
 @keyframes tarif {
-    from {transform:translateX(120%);}
+    from {transform:translateX(180%);}
     to {transform:translateX(0%);}
 }
 
@@ -79,6 +79,22 @@
     to{width:4em;}
 }
 @keyframes commentaire {
-    from {width:75%}
-    to{width:70%;}
+    from {}
+    to{width:57%;}
+}
+
+@keyframes nom_plat {
+    from {width:75%;white-space:nowrap;}
+    to{width:54%;white-space:nowrap;}
+}
+
+@keyframes fill_heart_1 {
+
+    from{opacity:0; transform:scale(0.5);z-index:0;}
+    to {opacity:1; transform:scale(1);z-index:2;}
+}
+@keyframes fill_heart_2 {
+
+    from{color:transparent;}
+    to {color:transparent;}
 }
