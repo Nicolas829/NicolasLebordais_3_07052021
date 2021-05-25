@@ -42,7 +42,10 @@
     to {  transform:translateX(50%);}
 }
 
-
+@keyframes menu {
+    from {opacity:0;}
+    to {opacity:0.95;}
+}
 
 /**animation volet pour restaurant***/
 
@@ -60,4 +63,22 @@
     }
     100% {transform: rotateX(360deg);
 }
+}
+
+@keyframes tarif {
+    from {transform:translateX(120%);}
+    to {transform:translateX(0%);}
+}
+
+@keyframes icone_check {
+    from {transform:rotate(0);}
+    to {transform:rotate(360deg);}
+}
+@keyframes box_achat {
+    from{}
+    to{width:4em;}
+}
+@keyframes commentaire {
+    from {width:75%}
+    to{width:70%;}
 }

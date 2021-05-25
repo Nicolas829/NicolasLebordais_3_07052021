@@ -165,23 +165,24 @@
       
         
         
-        &:active > .part_tarif_box_achat {
+        &:hover > .part_tarif_box_achat {
 
             & > .plat_box_achat {
-           transform: scaleX(1);
+                animation:box_achat 400ms ease forwards;
               & > i {
-                  transform:rotate(1turn);
+                animation:icone_check 400ms ease forwards;
               }
        }
            & > .plat_tarif {
-           transform:translate(0%);
-           
+            
+            animation:tarif 400ms ease forwards;
        }
     }
-        &:active > .part_nom_commentaire {
+        &:hover> .part_nom_commentaire {
           
-            width: 70%;                     
+            animation:commentaire 400ms ease forwards ;     
         
     }
 }
     
+

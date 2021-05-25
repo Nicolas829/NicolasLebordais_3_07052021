@@ -8,10 +8,10 @@
         display:none;
     }
     #unchecked_#{$i} {
-        &:active {
+        &:hover {
             display:none;
         }
-        &:active + #checked_#{$i}{
+        &:hover + #checked_#{$i}{
             display: block;
              
         }

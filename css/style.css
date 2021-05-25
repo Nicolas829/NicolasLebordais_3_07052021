@@ -449,6 +449,22 @@ footer ul li a:visited {
     transform: translateX(50%);
   }
 }
+@-webkit-keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.95;
+  }
+}
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.95;
+  }
+}
 /**animation volet pour restaurant***/
 @-webkit-keyframes swirl {
   0% {
@@ -482,6 +498,64 @@ footer ul li a:visited {
   }
   100% {
     transform: rotateX(360deg);
+  }
+}
+@-webkit-keyframes tarif {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes tarif {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes icone_check {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes icone_check {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes box_achat {
+  to {
+    width: 4em;
+  }
+}
+@keyframes box_achat {
+  to {
+    width: 4em;
+  }
+}
+@-webkit-keyframes commentaire {
+  from {
+    width: 75%;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes commentaire {
+  from {
+    width: 75%;
+  }
+  to {
+    width: 70%;
   }
 }
 #index {
@@ -1147,10 +1221,10 @@ footer {
   display: none;
 }
 
-#unchecked_1:active {
+#unchecked_1:hover {
   display: none;
 }
-#unchecked_1:active + #checked_1 {
+#unchecked_1:hover + #checked_1 {
   display: block;
 }
 
@@ -1163,10 +1237,10 @@ footer {
   display: none;
 }
 
-#unchecked_2:active {
+#unchecked_2:hover {
   display: none;
 }
-#unchecked_2:active + #checked_2 {
+#unchecked_2:hover + #checked_2 {
   display: block;
 }
 
@@ -1179,10 +1253,10 @@ footer {
   display: none;
 }
 
-#unchecked_3:active {
+#unchecked_3:hover {
   display: none;
 }
-#unchecked_3:active + #checked_3 {
+#unchecked_3:hover + #checked_3 {
   display: block;
 }
 
@@ -1195,10 +1269,10 @@ footer {
   display: none;
 }
 
-#unchecked_4:active {
+#unchecked_4:hover {
   display: none;
 }
-#unchecked_4:active + #checked_4 {
+#unchecked_4:hover + #checked_4 {
   display: block;
 }
 
@@ -1211,10 +1285,10 @@ footer {
   display: none;
 }
 
-#unchecked_5:active {
+#unchecked_5:hover {
   display: none;
 }
-#unchecked_5:active + #checked_5 {
+#unchecked_5:hover + #checked_5 {
   display: block;
 }
 
@@ -1227,10 +1301,10 @@ footer {
   display: none;
 }
 
-#unchecked_6:active {
+#unchecked_6:hover {
   display: none;
 }
-#unchecked_6:active + #checked_6 {
+#unchecked_6:hover + #checked_6 {
   display: block;
 }
 
@@ -1243,10 +1317,10 @@ footer {
   display: none;
 }
 
-#unchecked_7:active {
+#unchecked_7:hover {
   display: none;
 }
-#unchecked_7:active + #checked_7 {
+#unchecked_7:hover + #checked_7 {
   display: block;
 }
 
@@ -1259,10 +1333,10 @@ footer {
   display: none;
 }
 
-#unchecked_8:active {
+#unchecked_8:hover {
   display: none;
 }
-#unchecked_8:active + #checked_8 {
+#unchecked_8:hover + #checked_8 {
   display: block;
 }
 
@@ -1614,23 +1688,6 @@ img {
   }
 }
 
-@-webkit-keyframes menu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.95;
-  }
-}
-
-@keyframes menu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.95;
-  }
-}
 .entrée_1 {
   display: flex;
   flex-direction: row;
@@ -1646,17 +1703,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.entrée_1:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.entrée_1:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.entrée_1:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.entrée_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.entrée_1:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.entrée_1:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.entrée_1:active > .part_nom_commentaire {
-  width: 70%;
+.entrée_1:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .entrée_2 {
   display: flex;
@@ -1673,17 +1734,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.entrée_2:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.entrée_2:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.entrée_2:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.entrée_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.entrée_2:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.entrée_2:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.entrée_2:active > .part_nom_commentaire {
-  width: 70%;
+.entrée_2:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .entrée_3 {
   display: flex;
@@ -1700,17 +1765,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 200ms forwards;
           animation: fadeinmenu 400ms 200ms forwards;
 }
-.entrée_3:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.entrée_3:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.entrée_3:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.entrée_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.entrée_3:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.entrée_3:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.entrée_3:active > .part_nom_commentaire {
-  width: 70%;
+.entrée_3:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .entrée_4 {
   display: flex;
@@ -1727,17 +1796,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 100ms forwards;
           animation: fadeinmenu 400ms 100ms forwards;
 }
-.entrée_4:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.entrée_4:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.entrée_4:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.entrée_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.entrée_4:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.entrée_4:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.entrée_4:active > .part_nom_commentaire {
-  width: 70%;
+.entrée_4:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 
 .plat_1 {
@@ -1755,17 +1828,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.plat_1:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.plat_1:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.plat_1:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.plat_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.plat_1:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.plat_1:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.plat_1:active > .part_nom_commentaire {
-  width: 70%;
+.plat_1:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .plat_2 {
   display: flex;
@@ -1782,17 +1859,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.plat_2:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.plat_2:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.plat_2:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.plat_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.plat_2:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.plat_2:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.plat_2:active > .part_nom_commentaire {
-  width: 70%;
+.plat_2:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .plat_3 {
   display: flex;
@@ -1809,17 +1890,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 200ms forwards;
           animation: fadeinmenu 400ms 200ms forwards;
 }
-.plat_3:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.plat_3:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.plat_3:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.plat_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.plat_3:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.plat_3:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.plat_3:active > .part_nom_commentaire {
-  width: 70%;
+.plat_3:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .plat_4 {
   display: flex;
@@ -1836,17 +1921,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 100ms forwards;
           animation: fadeinmenu 400ms 100ms forwards;
 }
-.plat_4:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.plat_4:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.plat_4:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.plat_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.plat_4:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.plat_4:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.plat_4:active > .part_nom_commentaire {
-  width: 70%;
+.plat_4:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 
 .dessert_1 {
@@ -1864,17 +1953,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.dessert_1:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.dessert_1:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.dessert_1:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.dessert_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.dessert_1:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.dessert_1:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.dessert_1:active > .part_nom_commentaire {
-  width: 70%;
+.dessert_1:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .dessert_2 {
   display: flex;
@@ -1891,17 +1984,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.dessert_2:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.dessert_2:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.dessert_2:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.dessert_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.dessert_2:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.dessert_2:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.dessert_2:active > .part_nom_commentaire {
-  width: 70%;
+.dessert_2:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .dessert_3 {
   display: flex;
@@ -1918,17 +2015,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 200ms forwards;
           animation: fadeinmenu 400ms 200ms forwards;
 }
-.dessert_3:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.dessert_3:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.dessert_3:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.dessert_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.dessert_3:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.dessert_3:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.dessert_3:active > .part_nom_commentaire {
-  width: 70%;
+.dessert_3:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 .dessert_4 {
   display: flex;
@@ -1945,17 +2046,21 @@ img {
   -webkit-animation: fadeinmenu 400ms 100ms forwards;
           animation: fadeinmenu 400ms 100ms forwards;
 }
-.dessert_4:active > .part_tarif_box_achat > .plat_box_achat {
-  transform: scaleX(1);
+.dessert_4:hover > .part_tarif_box_achat > .plat_box_achat {
+  -webkit-animation: box_achat 400ms ease forwards;
+          animation: box_achat 400ms ease forwards;
 }
-.dessert_4:active > .part_tarif_box_achat > .plat_box_achat > i {
-  transform: rotate(1turn);
+.dessert_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
+  -webkit-animation: icone_check 400ms ease forwards;
+          animation: icone_check 400ms ease forwards;
 }
-.dessert_4:active > .part_tarif_box_achat > .plat_tarif {
-  transform: translate(0%);
+.dessert_4:hover > .part_tarif_box_achat > .plat_tarif {
+  -webkit-animation: tarif 400ms ease forwards;
+          animation: tarif 400ms ease forwards;
 }
-.dessert_4:active > .part_nom_commentaire {
-  width: 70%;
+.dessert_4:hover > .part_nom_commentaire {
+  -webkit-animation: commentaire 400ms ease forwards;
+          animation: commentaire 400ms ease forwards;
 }
 
 .plat_nom {
@@ -1975,10 +2080,9 @@ img {
   font-weight: bold;
   margin-top: 2em;
   transform: translateX(120%);
-  transition: transform 2-ds00ms ease-out;
 }
 .plat_box_achat {
-  width: 4em;
+  width: 0em;
   height: 4em;
   background-color: #99E2D0;
   color: #99E2D0;
@@ -1986,14 +2090,10 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 0 1.25em 1.25em 0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 200ms ease-in-out;
 }
 .plat_box_achat i {
   font-size: 2em;
   color: white;
-  transition: all 200ms ease-in-out;
 }
 
 .part_nom_commentaire {
@@ -2001,7 +2101,6 @@ img {
   flex-direction: column;
   width: 75%;
   padding-left: 0.5em;
-  transition: width 200ms ease-in-out;
 }
 
 .part_tarif_box_achat {
