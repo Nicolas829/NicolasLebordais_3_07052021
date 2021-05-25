@@ -840,11 +840,6 @@ div.partie_principal_index {
   font-size: 3em;
   z-index: 100;
   opacity: 0;
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   animation: wave_mobile_heart 1s 1 4000ms ease-in-out reverse;
 }
 @media (min-width: 769px) {
@@ -920,11 +915,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 200ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -934,11 +924,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 300ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -948,11 +933,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 400ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -962,11 +942,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 500ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -976,11 +951,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 600ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -990,11 +960,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 700ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1004,11 +969,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 800ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1018,11 +978,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 900ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1032,11 +987,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 1000ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1046,11 +996,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 1100ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1060,11 +1005,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 1200ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1074,11 +1014,6 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
-    background: white;
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 1300ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1266,14 +1201,11 @@ div.partie_principal_index {
   }
 }
 #checked_1 {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
+  color: #FF79DA;
+  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_1 {
@@ -1312,14 +1244,11 @@ div.partie_principal_index {
 }
 
 #checked_2 {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
+  color: #FF79DA;
+  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_2 {
@@ -1358,14 +1287,11 @@ div.partie_principal_index {
 }
 
 #checked_3 {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
+  color: #FF79DA;
+  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_3 {
@@ -1404,14 +1330,11 @@ div.partie_principal_index {
 }
 
 #checked_4 {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
+  color: #FF79DA;
+  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_4 {
@@ -1450,14 +1373,11 @@ div.partie_principal_index {
 }
 
 #checked_5 {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
+  color: #FF79DA;
+  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_5 {
@@ -1496,14 +1416,11 @@ div.partie_principal_index {
 }
 
 #checked_6 {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
+  color: #FF79DA;
+  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_6 {
@@ -1542,14 +1459,11 @@ div.partie_principal_index {
 }
 
 #checked_7 {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
+  color: #FF79DA;
+  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_7 {
@@ -1588,14 +1502,11 @@ div.partie_principal_index {
 }
 
 #checked_8 {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
+  color: #FF79DA;
+  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_8 {

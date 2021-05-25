@@ -87,9 +87,7 @@
     font-size:3em;
      z-index:100;    
      opacity:0;
-     @include color_secondary-gradiant;
-     background-clip:text;
-     -webkit-text-fill-color: transparent; 
+     
      animation:wave_mobile_heart 1s 1 4000ms  ease-in-out  reverse ; 
      @include desktop {
        display:none;
@@ -165,9 +163,8 @@ transform-origin:right;}
        width:1.11em ;
        text-align:center;       
       transform:translateZ(60px) translateY(-150%);       
-        @include color_secondary-gradiant;
-       background-clip:text;
-       -webkit-text-fill-color: transparent; 
+       
+       
        animation:wave 1s 4 100ms+$i*100ms  ease-in-out alternate-reverse   ;   
        opacity:0; }
         
