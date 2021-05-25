@@ -681,7 +681,6 @@ div.partie_principal_index {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -701,7 +700,6 @@ div.partie_principal_index {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -721,7 +719,6 @@ div.partie_principal_index {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -741,7 +738,6 @@ div.partie_principal_index {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -761,7 +757,6 @@ div.partie_principal_index {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -781,7 +776,6 @@ div.partie_principal_index {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -801,7 +795,6 @@ div.partie_principal_index {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -821,7 +814,6 @@ div.partie_principal_index {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -840,6 +832,10 @@ div.partie_principal_index {
   font-size: 3em;
   z-index: 100;
   opacity: 0;
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: wave_mobile_heart 1s 1 4000ms ease-in-out reverse;
 }
 @media (min-width: 769px) {
@@ -915,6 +911,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 200ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -924,6 +924,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 300ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -933,6 +937,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 400ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -942,6 +950,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 500ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -951,6 +963,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 600ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -960,6 +976,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 700ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -969,6 +989,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 800ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -978,6 +1002,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 900ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -987,6 +1015,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 1000ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -996,6 +1028,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 1100ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1005,6 +1041,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 1200ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1014,6 +1054,10 @@ div.partie_principal_index {
     width: 1.11em;
     text-align: center;
     transform: translateZ(60px) translateY(-150%);
+    background: white;
+    background: linear-gradient(#ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: wave 1s 4 1300ms ease-in-out alternate-reverse;
     opacity: 0;
   }
@@ -1201,11 +1245,13 @@ div.partie_principal_index {
   }
 }
 #checked_1 {
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
-  color: #FF79DA;
-  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_1 {
@@ -1244,11 +1290,13 @@ div.partie_principal_index {
 }
 
 #checked_2 {
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
-  color: #FF79DA;
-  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_2 {
@@ -1287,11 +1335,13 @@ div.partie_principal_index {
 }
 
 #checked_3 {
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
-  color: #FF79DA;
-  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_3 {
@@ -1330,11 +1380,13 @@ div.partie_principal_index {
 }
 
 #checked_4 {
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
-  color: #FF79DA;
-  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_4 {
@@ -1373,11 +1425,13 @@ div.partie_principal_index {
 }
 
 #checked_5 {
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
-  color: #FF79DA;
-  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_5 {
@@ -1416,11 +1470,13 @@ div.partie_principal_index {
 }
 
 #checked_6 {
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
-  color: #FF79DA;
-  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_6 {
@@ -1459,11 +1515,13 @@ div.partie_principal_index {
 }
 
 #checked_7 {
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
-  color: #FF79DA;
-  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_7 {
@@ -1502,11 +1560,13 @@ div.partie_principal_index {
 }
 
 #checked_8 {
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   z-index: 0;
   transform-origin: center;
-  color: #FF79DA;
-  text-shadow: 0px 0px 2px #9356DC;
 }
 
 #unchecked_8 {
@@ -1891,7 +1951,7 @@ img {
   }
 }
 
-.entrée_1 {
+.entree_1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1908,27 +1968,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.entrée_1:hover > .part_tarif_box_achat > .plat_box_achat {
+.entree_1:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.entrée_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.entree_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.entrée_1:hover > .part_tarif_box_achat > .plat_tarif {
+.entree_1:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.entrée_1:hover > .part_nom_commentaire > .plat_nom {
+.entree_1:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.entrée_1:hover > .part_nom_commentaire > .plat_commentaire {
+.entree_1:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.entrée_2 {
+.entree_2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1945,27 +2005,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.entrée_2:hover > .part_tarif_box_achat > .plat_box_achat {
+.entree_2:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.entrée_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.entree_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.entrée_2:hover > .part_tarif_box_achat > .plat_tarif {
+.entree_2:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.entrée_2:hover > .part_nom_commentaire > .plat_nom {
+.entree_2:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.entrée_2:hover > .part_nom_commentaire > .plat_commentaire {
+.entree_2:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.entrée_3 {
+.entree_3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1982,27 +2042,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 200ms forwards;
           animation: fadeinmenu 400ms 200ms forwards;
 }
-.entrée_3:hover > .part_tarif_box_achat > .plat_box_achat {
+.entree_3:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.entrée_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.entree_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.entrée_3:hover > .part_tarif_box_achat > .plat_tarif {
+.entree_3:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.entrée_3:hover > .part_nom_commentaire > .plat_nom {
+.entree_3:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.entrée_3:hover > .part_nom_commentaire > .plat_commentaire {
+.entree_3:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.entrée_4 {
+.entree_4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2019,23 +2079,23 @@ img {
   -webkit-animation: fadeinmenu 400ms 100ms forwards;
           animation: fadeinmenu 400ms 100ms forwards;
 }
-.entrée_4:hover > .part_tarif_box_achat > .plat_box_achat {
+.entree_4:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.entrée_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.entree_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.entrée_4:hover > .part_tarif_box_achat > .plat_tarif {
+.entree_4:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.entrée_4:hover > .part_nom_commentaire > .plat_nom {
+.entree_4:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.entrée_4:hover > .part_nom_commentaire > .plat_commentaire {
+.entree_4:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
