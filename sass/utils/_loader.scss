@@ -1,207 +1,119 @@
 #index {
   
   overflow:hidden;
-  animation:size_change 0.5s 5.5s forwards;
+  animation:size_change 0.01s 3.5s forwards;
 }
   
   div.partie_principal_index { 
   
 
-  @include desktop {
-   margin-top:-80em;}     
-    position:relative;
+  @include desktop {   
+    
     z-index: -1;
-    animation:display 0.5s 5.5s forwards;
-    
-  }
-  #footer_index {   
-    
-    z-index: 2;
-    animation:display 0.5s 5.5s forwards;
-    
-  }
-  .loader {
-    @include mobile {
-      display:none;
-    }
-    @include tablette {
-      display:none;
-    }
-  }
-
-  .loader_mobile {
-    
-    
-    position:absolute;
-    display:flex;
-    justify-content: center;
-    z-index:3;
-    font-family: "Shrikhand";
-    box-sizing: border-box;    
-    width:100%;
-    height:100%;
-    perspective:600px;
-    transform-style: preserve-3d; 
-    animation:scale 0.5s 5s forwards;
    
-    @include color-secondary-gradiant;    
-   
-    @include tablette {
-      height:65em;
-    }
-
-
-    @include desktop {
-      display:none;
-    }
-  }
-
-  @for $i from 0 through 7 {
-
-    .loader_logo_#{$i} {
-     
-     font-size:3em;
-     margin-top:3em;
-      text-align:center;       
-     transform:translateZ(60px) translateY(10%);   
-      animation:wave_mobile 950ms 4 100ms+$i*100ms  ease-in-out alternate-reverse  ;   
-      opacity:0;
-      @include color_secondary-gradiant;
-      -webkit-background-clip:text;
-      -webkit-text-fill-color: transparent; 
-      @include tablette{
-        font-size:5em;
-        margin-top:2em;
-        
-      }
-         
+    
   }}
-  
- .loader_heart_2 {    
  
-    display:flex;
-   justify-content: center;
-     position:absolute;
-    right:3.5em;
-    margin-top:7em;
-    font-size:3em;
-     z-index:100;    
-     opacity:0;
-     @include color_secondary-gradiant;
-     -webkit-background-clip:text;
-          -webkit-text-fill-color: transparent; 
-     animation:wave_mobile_heart 1s 1 4000ms  ease-in-out  reverse ; 
-     @include desktop {
-       display:none;
-     }
-     @include tablette {
-       font-size:5em;
-       right:4em;
-       margin-top:5em;
-
-       
-     }
-      
-     
-  }
-       
-
-  .loader {
-    @include desktop {         
-    perspective:600px;
-    transform-style: preserve-3d; 
-    display:flex;
-    justify-content: center;  
-    align-items: center;      
-    position:relative;       
-    z-index:3;   
-    box-sizing: border-box;    
-    height:100em;    
-    
-    }      
-    &_1 {
-      @include desktop{
+  .loader {  
+    position:absolute;
+    z-index:3;
     box-sizing:border-box;
     width:100%;
     height:100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-animation:door 2s 4.5s  ease-in-out forwards;
-transform-origin:left;}
+    background-color: $color_footer; opacity:0.9;
+    display:flex;
+    justify-content:center;    
+    align-items: center; 
+    perspective:1000px; 
     
+     animation:zindex 0.3s 2.5s forwards;
     }
-    &_2 { @include desktop{
-      
-    box-sizing:border-box;
-    width:100%;
-    height:100%;
-    display: flex;
-    background: rgb(255,255,255);
-    background: linear-gradient(#ff79da 0%, #9356dc 100%);
-animation:door 2s 4.5s ease-in-out forwards;
-transform-origin:right;}
-    
-    }
-    
-     .particles_box_2 { @include desktop{
-       box-sizing:border-box;
-       display:flex;   
-       justify-content: center;                
-       font-size:7em;
-       z-index:1;       
-       transform-style: preserve-3d;             
-       position: absolute;  
-       top:5em;    
-       z-index:4;           
-       width:auto;  } 
-     
-     }
 
-     
-     /*partie loader LETTRES */
-     @for $i from 1 through 12 {     
-      @include desktop{
-      .particles_box_2_#{$i} {       
-       width:1.11em ;
-       text-align:center;       
-      transform:translateZ(60px) translateY(-150%);       
-        @include color_secondary-gradiant;
-        -webkit-background-clip:text;
-       -webkit-text-fill-color: transparent; 
-       animation:wave 1s 4 100ms+$i*100ms  ease-in-out alternate-reverse   ;   
-       opacity:0; }
-        
-      }}             
-
+.box_0_0 {
+             
+        position:absolute;         
+        font-size:2em;        
+        transform-style: preserve-3d;           
+         margin-top:-2em;
+         margin-left:-2em;
+         text-align:center;        
+          animation:turn 2.5s  1 alternate;
+          font-size:2em;
+          @include mobile {
+            font-size:1em;
+          }
+          transform-origin:2em 2em;  /*axe de rotation important*/
+          
+        i {          
+         color:#99E2D0; 
+          opacity:1;
+          font-size:1.4em; 
   }
+  }      
 
-@keyframes wave {
-  0% {transform:translateZ(80px) translateX(0)translateY(-150%) ;opacity:1;}  
-  100% {transform:translateZ(-80px) translateX(150%)translateY(-250%);text-shadow: 0px 11px 10px rgba(81,67,21,0.8);opacity:0;}
-  }
-
-@keyframes wave_mobile {
-  0% {text-shadow:none;opacity:1;}  
-  100% {text-shadow: 0px 11px 10px rgba(81,67,21,0.8); opacity:0;}
+       
+.face {
   
-}
-@keyframes wave_mobile_heart {
-  0% {text-shadow:none;opacity:1;  transform: scale(1);}  
-  100% {text-shadow: 0px 11px 10px rgba(81,67,21,0.8);  transform : scale(4); opacity:0;}
+  width:4em;
+  height:4em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+ position:absolute;   /*important*/
+   background: rgb(255,255,255);
+        background: linear-gradient(#ff79da 0%, #9356dc 100%);
   
 }
 
-@keyframes door {
- 0% {transform:scaleX(1);}
-  100% {transform:scaleX(0);}
+.face_avant {
+  transform:translateZ(2em);
+}
+
+.face_dessous {
+  transform:rotateX(-90deg) translateZ(2em) ;
  
-}
-@keyframes door_right {
-  0% {transform:scaleX(1);}
-   100% {transform:scaleX(0);}
   
- }
+}
+.face_dessus {
+  transform:rotateX(90deg) translateZ(2em);
+  
+}
 
+.face_gauche {
+  transform:  rotateY(90deg) translateZ(2em);
+  
+  
+}
+
+.face_droite {
+  transform:rotateY(-90deg) translateZ(2em);
+  font-size:1em;
+   
+}
+.face_derriere {
+  transform:translateZ(-2em);
+}
+
+
+@keyframes turn {
+  10%{transform:rotateX(0);} 
+  20%{transform:rotateX(90deg);}
+  30%{transform:rotateZ(-90deg);}
+  40%{transform:rotateY(90deg);}
+  50%{transform:rotateX(-90deg);}
+  60%{transform:rotateZ(180deg);}
+  70%{transform:rotateY(180deg);}
+  80%{transform:rotateX(-180deg) rotateY(90deg);}
+  90%{transform:rotate(270deg);}
+  100%{transform:rotate(0);}
+    
+}
+@keyframes zindex {
+  0%{opacity:1;}
+  95%{opacity:0;width:1%;}
+  99%{opacity:0;z-index:4; width:0%}
+  100%{z-index:-999;opacity:0;width:0%;}
+}
 
 @keyframes display {
   from {z-index:-1; }
