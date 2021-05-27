@@ -40,10 +40,12 @@
          <!--fin section loader-->    
     
     <div class="partie_principal_index">
-        <header>
-            <div class="logo_accueil" id="logo"><h1>Ohmyfood</h1></div>
-
-            <section class="part2" id="container_accueil">
+        <header><!-- header (logo + cadre accueil) -->
+            <div class="logo_accueil" id="logo">
+                <h1>Ohmyfood</h1>
+            </div>
+            <!--cadre accueil-->
+            <section class="part_accueil" id="container_accueil">
                 <div class="localisation">
                     <i class="fas fa-map-marker-alt"></i>
                     <span class="text-localisation">Paris, Belleville</span>
@@ -52,11 +54,14 @@
                     <h2 class="text_accueil">Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
                 </div>
-                    <div class="btn-exploration"><a href="#restaurant"><p>Explorer nos restaurants</p></a></div>
-                
-            </section>            
-        </header>
-
+                    <div class="btn-exploration">
+                        <a href="#restaurant">
+                            <p>Explorer nos restaurants</p>
+                        </a>
+                    </div>                
+            </section> <!--fin cadre accueil-->           
+        </header><!--fin header-->
+        <!--fonctionnement de la plateforme-->
         <section id="fonctionnement" class="fonctionnement">
             <h3>Fonctionnement</h3>
             <nav class="container_fonctionnement">
@@ -64,124 +69,101 @@
                         <span class="position">1</span>
                         <i class="fas fa-mobile-alt"></i>
                         <span>Choisissez un restaurant</span>
-                    
                      </div>
-                    <div class=btn_fonction_composition>
-                    
+                     <div class=btn_fonction_composition>
                         <span class="position">2</span>
                         <i class="fas fa-list"></i>
                         <span>Composez votre menu</span>
-                    
-                    </div>
-                    <div class=btn_fonction_degustation>
+                     </div>
+                     <div class=btn_fonction_degustation>
                         <span class="position">3</span>
                         <i class="fas fa-store"></i>
                         <span>Degustez au restaurant</span>
-                    </div>
-                
-                </nav>
+                     </div>
+            </nav>
+                <!--fin fonctionnement de la plateforme-->
         </section>
+        <!--présentation des retaurants-->
         <section id="restaurant" class="container_restaurant">
             <div class="titre_resto">
                 <h4>Restaurants</h4>
             </div>
-        <div class="restaurant_wrapper">
-            
-            <div class="box_resto_1">
-                <a href="palette_du_goût.html">
-                <div class="box_resto_photo">
-                    <img src="images/restaurants/palette2.jpg" alt="photo_restaurant_la_palette">
-                    <span class="cadre_new">Nouveau</span>
-                </div>
-                <div class="box_resto_nom_lieu_heart">
-                
-                    <div class="box_resto_nom_lieu">
-                       
-                        <span class="box_resto_nom">La palette du goût</span>
-                       
-                        <span class="box_resto_lieu">Ménilmontant</span>
+
+            <div class="restaurant_wrapper">          
+                <div class="box_resto_1">
+                    <a href="palette_du_goût.html">
+                    <div class="box_resto_photo">
+                        <img src="images/restaurants/palette2.jpg" alt="photo_restaurant_la_palette">
+                        <span class="cadre_new">Nouveau</span>
                     </div>
-                    <div class="box_resto_heart">
+                    <div class="box_resto_nom_lieu_heart">
+                        <div class="box_resto_nom_lieu">
+                            <span class="box_resto_nom">La palette du goût</span>
+                            <span class="box_resto_lieu">Ménilmontant</span>
+                        </div>
+                        <div class="box_resto_heart">                    
+                            <i class="far fa-heart" id="unchecked_1"></i>
+                            <i class="fas fa-heart" id="checked_1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="box_resto_2">
+                    <a href="note_enchantée.html">
+                    <div class="box_resto_photo">
+                        <img src="images/restaurants/enchanté2.jpg" alt="photo restaurant la note enchantée">
+                        <span class="cadre_new">Nouveau</span>
+                    </div>
+                    <div class="box_resto_nom_lieu_heart">
+                        <div class="box_resto_nom_lieu">
+                            <span class="box_resto_nom">La note enchantée</span>
+                            <span class="box_resto_lieu">Charonne</span>
+                        </div>
+                        <div class="box_resto_heart">
+                            <i class="far fa-heart" id="unchecked_2"></i>
+                            <i class="fas fa-heart" id="checked_2"></i>
+                    </div>
+                    </div>
+                    </a>
+                 </div>
+                <div class="box_resto_3">
+                    <a href="a_la_française.html">
+                    <div class="box_resto_photo">
+                        <img src="images/restaurants/française2.jpg" alt="photo restaurant à la française">
+                    </div>
+                    <div class="box_resto_nom_lieu_heart">
+                        <div class="box_resto_nom_lieu">
+                            <span class="box_resto_nom">A la française</span>
+                            <span class="box_resto_lieu">Cité Rouge</span>
+                    </div>
+                        <div class="box_resto_heart">
+                            <i class="far fa-heart" id="unchecked_3"></i>
+                            <i class="fas fa-heart" id="checked_3"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="box_resto_4">
+                    <a href="délice_des_sens.html">
+                    <div class="box_resto_photo">
+                        <img src="images/restaurants/sens2.jpg" alt="photo restaurant le délice des sens">
                     
-                        <i class="far fa-heart" id="unchecked_1"></i>
-                        <i class="fas fa-heart" id="checked_1"></i>
                     </div>
-                
-                </div>
-                </a>
-            </div>
-            <div class="box_resto_2">
-                <a href="note_enchantée.html">
-                <div class="box_resto_photo">
-                    <img src="images/restaurants/enchanté2.jpg" alt="photo restaurant la note enchantée">
-                    <span class="cadre_new">Nouveau</span>
-                </div>
-                <div class="box_resto_nom_lieu_heart">
-                
-                    <div class="box_resto_nom_lieu">
-                       
-                        <span class="box_resto_nom">La note enchantée</span>
-                       
-                        <span class="box_resto_lieu">Charonne</span>
+                    <div class="box_resto_nom_lieu_heart">                
+                        <div class="box_resto_nom_lieu">
+                            <span class="box_resto_nom">Le délice des sens</span>
+                            <span class="box_resto_lieu">Folie-Méricourt</span>
+                        </div>
+                        <div class="box_resto_heart">
+                            <i class="far fa-heart" id="unchecked_4"></i>
+                            <i class="fas fa-heart" id="checked_4"></i>
+                        </div>
                     </div>
-                    <div class="box_resto_heart">
-                    
-                        <i class="far fa-heart" id="unchecked_2"></i>
-                        <i class="fas fa-heart" id="checked_2"></i>
-                    </div>
-                
+                    </a>
                 </div>
-                </a>
-            </div>
-            <div class="box_resto_3">
-                <a href="a_la_française.html">
-                <div class="box_resto_photo">
-                    <img src="images/restaurants/française2.jpg" alt="photo restaurant à la française">
-                    
-                </div>
-                <div class="box_resto_nom_lieu_heart">
-                
-                    <div class="box_resto_nom_lieu">
-                       
-                        <span class="box_resto_nom">A la française</span>
-                       
-                        <span class="box_resto_lieu">Cité Rouge</span>
-                    </div>
-                    <div class="box_resto_heart">
-                    
-                        <i class="far fa-heart" id="unchecked_3"></i>
-                        <i class="fas fa-heart" id="checked_3"></i>
-                    </div>
-                
-                </div>
-                </a>
-            </div>
-            <div class="box_resto_4">
-                <a href="délice_des_sens.html">
-                <div class="box_resto_photo">
-                    <img src="images/restaurants/sens2.jpg" alt="photo restaurant le délice des sens">
-                    
-                </div>
-                <div class="box_resto_nom_lieu_heart">
-                
-                    <div class="box_resto_nom_lieu">
-                       
-                        <span class="box_resto_nom">Le délice des sens</span>
-                       
-                        <span class="box_resto_lieu">Folie-Méricourt</span>
-                    </div>
-                    <div class="box_resto_heart">
-                    
-                        <i class="far fa-heart" id="unchecked_4"></i>
-                        <i class="fas fa-heart" id="checked_4"></i>
-                    </div>
-                
-                </div>
-                </a>
-            </div>
-        </div> <!--restaurant_wrapper-->
-        </section>   
-    </div>
+            </div> <!--restaurant_wrapper-->
+        </section> <!--fin restaurant-->  
+    </div><!--fin partie principale-->
 
 <footer id="footer_index">
     <p>Ohmyfood</p>
@@ -194,8 +176,12 @@
                 <i class="fas fa-hands-helping"></i>
                 <a href="">Devenir partenaire</a>
             </li>
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+            <li>
+                <a href="">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
         </ul>
 </footer>
 </body>

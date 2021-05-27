@@ -1,146 +1,73 @@
-#index {
-  
+/*permet de bloquer la page sur le loader, en changeant les param$etre de 
+ body #index*/
+ #index {  
   overflow:hidden;
-  animation:size_change 0.01s 3.5s forwards;
+  animation:body 0.01s 3.5s forwards;
 }
   
-  div.partie_principal_index { 
-  
-
-  @include desktop {   
-    
-    z-index: -1;
-   
-    
-  }}
- 
-  .loader {  
+.loader {  
     position:absolute;
     z-index:3;
     box-sizing:border-box;
     width:100%;
     height:100%;
-    background-color: $color_footer; opacity:0.9;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.7) 120%);
     display:flex;
     justify-content:center;    
     align-items: center; 
-    perspective:1000px; 
-    
-     animation:zindex 0.3s 2.5s forwards;
-    }
-
-.box_0_0 {
-             
-        position:absolute;         
-        font-size:2em;        
-        transform-style: preserve-3d;           
-         margin-top:-2em;
-         margin-left:-2em;
-         text-align:center;        
-          animation:turn 2.5s  1 alternate;
-          font-size:2em;
-          @include mobile {
-            font-size:1em;
-          }
-          transform-origin:2em 2em;  /*axe de rotation important*/
-          
+    perspective:1000px;     
+     animation:zindex 0.3s 2.5s forwards;  /*animation faisant disparaître le cube*/
+    .box_0_0 {             
+      position:absolute;         
+      font-size:2em;        
+      transform-style: preserve-3d;           
+      margin-top:-2em;
+      margin-left:-2em;
+      text-align:center;        
+      animation:turn 2.5s  1 alternate;
+      font-size:2em;     
+      opacity:1;   
+      transform-origin:2em 2em;  /*axe de rotation important*/     
+      @include mobile {
+        font-size:1em;
+      }
         i {          
-         color:#99E2D0; 
-          opacity:1;
+          color:#99E2D0;          
           font-size:1.4em; 
-  }
-  }      
-
-       
-.face {
-  
+        }
+      }      
+    }
+/*façonnage du cube*/
+.face { 
   width:4em;
   height:4em;
   display:flex;
   align-items:center;
   justify-content:center;
- position:absolute;   /*important*/
-   background: rgb(255,255,255);
-        background: linear-gradient(#ff79da 0%, #9356dc 100%);
-  
+  position:absolute;   /*important */
+  background: rgb(255,255,255);
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
 }
 
-.face_avant {
-  transform:translateZ(2em);
-}
-
-.face_dessous {
-  transform:rotateX(-90deg) translateZ(2em) ;
- 
-  
-}
-.face_dessus {
-  transform:rotateX(90deg) translateZ(2em);
-  
-}
-
-.face_gauche {
-  transform:  rotateY(90deg) translateZ(2em);
-  
-  
-}
-
-.face_droite {
-  transform:rotateY(-90deg) translateZ(2em);
-  font-size:1em;
-   
-}
-.face_derriere {
-  transform:translateZ(-2em);
-}
+  /*chaque face a sa place*/
+  .face_avant {
+    transform:translateZ(2em);
+  }
+  .face_dessous {
+    transform:rotateX(-90deg) translateZ(2em) ; 
+  } 
+  .face_dessus {
+    transform:rotateX(90deg) translateZ(2em);  
+  }
+  .face_gauche {
+    transform:  rotateY(90deg) translateZ(2em);  
+  }
+  .face_droite {
+    transform:rotateY(-90deg) translateZ(2em);   
+  }
+  .face_derriere {
+    transform:translateZ(-2em);
+  }
 
 
-@keyframes turn {
-  10%{transform:rotateX(0);} 
-  20%{transform:rotateX(90deg);}
-  30%{transform:rotateZ(-90deg);}
-  40%{transform:rotateY(90deg);}
-  50%{transform:rotateX(-90deg);}
-  60%{transform:rotateZ(180deg);}
-  70%{transform:rotateY(180deg);}
-  80%{transform:rotateX(-180deg) rotateY(90deg);}
-  90%{transform:rotate(270deg);}
-  100%{transform:rotate(0);}
-    
-}
-@keyframes zindex {
-  0%{opacity:1;}
-  95%{opacity:0;width:1%;}
-  99%{opacity:0;z-index:4; width:0%}
-  100%{z-index:-999;opacity:0;width:0%;}
-}
-
-@keyframes display {
-  from {z-index:-1; }
-  to {z-index:4; }
-}
-
-@keyframes size_change {
-  from {overflow:hidden;
-    }
-    to {overflow:visible;
-    }
-}
-@keyframes scale {
-
-  from{transform:scale(1) rotateY(0);}
-  to {transform:scale(0) rotateY(360deg);}
-}
-
-
-  
-  @keyframes body {
-    0% {opacity:0;}
-    20%{opacity:0;}
-    40%{opacity:0;}
-    60%{opacity:0;}
-    100%{opacity:1;}
-}
-
-
-  

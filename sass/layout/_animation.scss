@@ -1,100 +1,106 @@
+
+/*apparition des plats en simulatanée*/
 @keyframes fadeinmenu {
     from {opacity:0; }
-    to {opacity:1; }
-    
+    to {opacity:1; }    
 }
 
-@keyframes fadein_fonction_mobile {
-    from {opacity:0; margin-bottom:4em;}
-    to {opacity:1; margin-bottom:2em;}
-
-}
-
-@keyframes btn {
-    0% {}
-    10% {transform:translateX(2%)}
-    15% {transform:translateY(2%)}
-    20% {transform:translateX(-2%)}
-    25% {transform:translateY(-2%)}
-    30% {transform:translateX(2%)}
-    35% {transform:translateY(2%)}
-    40% {transform:translateX(-2%)}
-    45% {transform:translateY(-2%)}
-    100%{}
-}
-
-
+/*apparition du boutons de fonctionnement par la gauche*/
 @keyframes fadein_left {
     from { 
         transform:translateX(100%);}
     to {  transform:translateX(-50%);}
 }
+/*apparition du boutons de fonctionnement par centre*/
 @keyframes fadein_center {
     from { 
         transform:scaleX(0) ;}
     to {  transform:scaleX(1);}
 }
-
-
+/*apparition du boutons de fonctionnement par la droite*/
 @keyframes fadein_right {
     from { 
         transform:translateX(0);}
     to {  transform:translateX(50%);}
 }
 
-@keyframes menu {
-    from {opacity:0;}
-    to {opacity:0.95;}
-}
 
-/**animation volet pour restaurant***/
-
-   
+/**animation carroussel pour restaurant***/    
 @keyframes swirl {   
-    0% {
-      transform: rotateX(0deg)  ;
-    }
-     
-     25% {transform: rotateX(90deg);
-    }
-    50% {transform: rotateX(180deg);
-    }
-    75% {transform: rotateX(270deg);
-    }
-    100% {transform: rotateX(360deg);
-}
+    0% {transform: rotateX(0deg)  ;}
+    25% {transform: rotateX(90deg);}
+    50% {transform: rotateX(180deg);}
+    75% {transform: rotateX(270deg);}
+    100% {transform: rotateX(360deg);}
 }
 
+/*animation check menu */
 @keyframes tarif {
     from {transform:translateX(180%);}
     to {transform:translateX(0%);}
 }
-
+/*animation check menu */
 @keyframes icone_check {
     from {opacity:1;transform:rotate(0);}
     to {transform:rotate(360deg);opacity:1;}
 }
+/*animation check menu */
 @keyframes box_achat {
     from{}
     to{width:4em;}
 }
+/*animation check menu */
 @keyframes commentaire {
     from {}
     to{width:57%;}
 }
-
+/*animation check menu */
 @keyframes nom_plat {
     from {width:75%;white-space:nowrap;}
     to{width:54%;white-space:nowrap;}
 }
-
+/*animation pour remplissage coeur */
 @keyframes fill_heart_1 {
 
     from{opacity:0; transform:scale(0.5);z-index:0;}
     to {opacity:1; transform:scale(1);z-index:2;}
 }
+/*animation pour disparition coeur*/
 @keyframes fill_heart_2 {
-
     from{color:transparent;}
     to {color:transparent;}
 }
+
+/*animation du loader*/
+
+
+/*loader:tourne le cube*/
+@keyframes turn {
+    10%{transform:rotateX(0);} 
+    20%{transform:rotateX(90deg);}
+    30%{transform:rotateZ(-90deg);}
+    40%{transform:rotateY(90deg);}
+    50%{transform:rotateX(-90deg);}
+    60%{transform:rotateZ(180deg);}
+    70%{transform:rotateY(180deg);}
+    80%{transform:rotateX(-180deg) rotateY(90deg);}
+    90%{transform:rotate(270deg);}
+    100%{transform:rotate(0);}
+    }
+
+/*loader:disparition le cube*/
+@keyframes zindex {
+    0%{opacity:1;}
+    95%{opacity:0;width:1%;}
+    99%{opacity:0;z-index:4; width:0%}
+    100%{z-index:-999;opacity:0;width:0%;}
+  }
+  
+/*loader:change la visibilité du body*/
+@keyframes body {
+    from {overflow:hidden;
+      }
+      to {overflow:visible;
+      }
+  }
+  

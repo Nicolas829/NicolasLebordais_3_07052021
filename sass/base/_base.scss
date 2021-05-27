@@ -59,19 +59,11 @@ div .btn-exploration p {
 
 a {
   text-decoration: none;   
-  color:black;
- 
+  color:black; 
   &:visited {
     color:black;
-
   }
 }
-
-button {
-  border:none;
-  font-size:1.1em;
-}
-
 .position {
   color:white;
 }
@@ -83,13 +75,10 @@ button {
   justify-content: space-between;  
   align-items:center;
   padding-right:1em;
-  font-family: "shrikhand";  
-  
-  font-size:1.6em;
-  
+  font-family: "shrikhand";    
+  font-size:1.6em;  
   @include desktop {
-    padding-top:0;
-      
+    padding-top:0;      
     font-size:2em;
   }
   
@@ -132,8 +121,6 @@ div.titre_resto {
   
 }
 
-
-
 h4 {
   font-size:1.5em;
   @include desktop {
@@ -145,8 +132,7 @@ h4 {
     height:1.5em;
     border-radius: 0.5em;
     color:white;
-    margin-bottom:1.5em;
-    
+    margin-bottom:1.5em;    
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 @include color-secondary-gradiant;
   }

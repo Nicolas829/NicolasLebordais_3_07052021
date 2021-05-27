@@ -21,19 +21,14 @@ Thèmes.
 ****/
 /*taille*/
 /*durée*/
-/*localisation #e4e4e4;
-btn explorer linear-gradient(#ff79da 0%, #9356dc 100%);
-couleur background footer /  #353535 */
-/***
-@function lightness-shift($colour) {
-    @if (lightness($colour) < 25%){
-        @return lighten($colour, 10%);
-    }@else{
-        @return darken($colour, 10%);
-    }
-}
-
-***/
+/*font*/
+/*shadow et degradé*/
+/*cadre accueil*/
+/*bouton de commande et d'exploration*/
+/*breakpoint*/
+/*pour bouton de fonctionnement*/
+/*mixin pour container présentation restaurant de l'index*/
+/*mixin pour le menu des pages restaurants */
 body {
   margin: 0;
   margin-left: auto;
@@ -109,11 +104,6 @@ a {
 }
 a:visited {
   color: black;
-}
-
-button {
-  border: none;
-  font-size: 1.1em;
 }
 
 .position {
@@ -202,11 +192,13 @@ html {
   font-family: "Roboto";
 }
 
+/*logo page index*/
 .logo_accueil {
   display: flex;
   justify-content: center;
 }
 
+/*logo page restaurant*/
 .logo_pages {
   display: flex;
   justify-content: space-between;
@@ -246,6 +238,7 @@ html {
   }
 }
 
+/*photo restaurant pour pages restaurant*/
 div.photo_resto img {
   z-index: 0;
   box-sizing: border-box;
@@ -295,6 +288,7 @@ footer ul li a:visited {
   color: white;
 }
 
+/*apparition des plats en simulatanée*/
 @-webkit-keyframes fadeinmenu {
   from {
     opacity: 0;
@@ -303,7 +297,6 @@ footer ul li a:visited {
     opacity: 1;
   }
 }
-
 @keyframes fadeinmenu {
   from {
     opacity: 0;
@@ -312,78 +305,7 @@ footer ul li a:visited {
     opacity: 1;
   }
 }
-@-webkit-keyframes fadein_fonction_mobile {
-  from {
-    opacity: 0;
-    margin-bottom: 4em;
-  }
-  to {
-    opacity: 1;
-    margin-bottom: 2em;
-  }
-}
-@keyframes fadein_fonction_mobile {
-  from {
-    opacity: 0;
-    margin-bottom: 4em;
-  }
-  to {
-    opacity: 1;
-    margin-bottom: 2em;
-  }
-}
-@-webkit-keyframes btn {
-  10% {
-    transform: translateX(2%);
-  }
-  15% {
-    transform: translateY(2%);
-  }
-  20% {
-    transform: translateX(-2%);
-  }
-  25% {
-    transform: translateY(-2%);
-  }
-  30% {
-    transform: translateX(2%);
-  }
-  35% {
-    transform: translateY(2%);
-  }
-  40% {
-    transform: translateX(-2%);
-  }
-  45% {
-    transform: translateY(-2%);
-  }
-}
-@keyframes btn {
-  10% {
-    transform: translateX(2%);
-  }
-  15% {
-    transform: translateY(2%);
-  }
-  20% {
-    transform: translateX(-2%);
-  }
-  25% {
-    transform: translateY(-2%);
-  }
-  30% {
-    transform: translateX(2%);
-  }
-  35% {
-    transform: translateY(2%);
-  }
-  40% {
-    transform: translateX(-2%);
-  }
-  45% {
-    transform: translateY(-2%);
-  }
-}
+/*apparition du boutons de fonctionnement par la gauche*/
 @-webkit-keyframes fadein_left {
   from {
     transform: translateX(100%);
@@ -400,6 +322,7 @@ footer ul li a:visited {
     transform: translateX(-50%);
   }
 }
+/*apparition du boutons de fonctionnement par centre*/
 @-webkit-keyframes fadein_center {
   from {
     transform: scaleX(0);
@@ -416,6 +339,7 @@ footer ul li a:visited {
     transform: scaleX(1);
   }
 }
+/*apparition du boutons de fonctionnement par la droite*/
 @-webkit-keyframes fadein_right {
   from {
     transform: translateX(0);
@@ -432,23 +356,7 @@ footer ul li a:visited {
     transform: translateX(50%);
   }
 }
-@-webkit-keyframes menu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.95;
-  }
-}
-@keyframes menu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.95;
-  }
-}
-/**animation volet pour restaurant***/
+/**animation carroussel pour restaurant***/
 @-webkit-keyframes swirl {
   0% {
     transform: rotateX(0deg);
@@ -483,6 +391,7 @@ footer ul li a:visited {
     transform: rotateX(360deg);
   }
 }
+/*animation check menu */
 @-webkit-keyframes tarif {
   from {
     transform: translateX(180%);
@@ -499,6 +408,7 @@ footer ul li a:visited {
     transform: translateX(0%);
   }
 }
+/*animation check menu */
 @-webkit-keyframes icone_check {
   from {
     opacity: 1;
@@ -519,6 +429,7 @@ footer ul li a:visited {
     opacity: 1;
   }
 }
+/*animation check menu */
 @-webkit-keyframes box_achat {
   to {
     width: 4em;
@@ -529,6 +440,7 @@ footer ul li a:visited {
     width: 4em;
   }
 }
+/*animation check menu */
 @-webkit-keyframes commentaire {
   to {
     width: 57%;
@@ -539,6 +451,7 @@ footer ul li a:visited {
     width: 57%;
   }
 }
+/*animation check menu */
 @-webkit-keyframes nom_plat {
   from {
     width: 75%;
@@ -559,6 +472,7 @@ footer ul li a:visited {
     white-space: nowrap;
   }
 }
+/*animation pour remplissage coeur */
 @-webkit-keyframes fill_heart_1 {
   from {
     opacity: 0;
@@ -583,6 +497,7 @@ footer ul li a:visited {
     z-index: 2;
   }
 }
+/*animation pour disparition coeur*/
 @-webkit-keyframes fill_heart_2 {
   from {
     color: transparent;
@@ -599,95 +514,8 @@ footer ul li a:visited {
     color: transparent;
   }
 }
-#index {
-  overflow: hidden;
-  -webkit-animation: size_change 0.01s 3.5s forwards;
-          animation: size_change 0.01s 3.5s forwards;
-}
-
-@media (min-width: 769px) {
-  div.partie_principal_index {
-    z-index: -1;
-  }
-}
-
-.loader {
-  position: absolute;
-  z-index: 3;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  background-color: #353535;
-  opacity: 0.9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 1000px;
-  -webkit-animation: zindex 0.3s 2.5s forwards;
-          animation: zindex 0.3s 2.5s forwards;
-}
-
-.box_0_0 {
-  position: absolute;
-  font-size: 2em;
-  transform-style: preserve-3d;
-  margin-top: -2em;
-  margin-left: -2em;
-  text-align: center;
-  -webkit-animation: turn 2.5s 1 alternate;
-          animation: turn 2.5s 1 alternate;
-  font-size: 2em;
-  transform-origin: 2em 2em;
-  /*axe de rotation important*/
-}
-@media (max-width: 540px) {
-  .box_0_0 {
-    font-size: 1em;
-  }
-}
-.box_0_0 i {
-  color: #99E2D0;
-  opacity: 1;
-  font-size: 1.4em;
-}
-
-.face {
-  width: 4em;
-  height: 4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  /*important*/
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
-}
-
-.face_avant {
-  transform: translateZ(2em);
-}
-
-.face_dessous {
-  transform: rotateX(-90deg) translateZ(2em);
-}
-
-.face_dessus {
-  transform: rotateX(90deg) translateZ(2em);
-}
-
-.face_gauche {
-  transform: rotateY(90deg) translateZ(2em);
-}
-
-.face_droite {
-  transform: rotateY(-90deg) translateZ(2em);
-  font-size: 1em;
-}
-
-.face_derriere {
-  transform: translateZ(-2em);
-}
-
+/*animation du loader*/
+/*loader:tourne le cube*/
 @-webkit-keyframes turn {
   10% {
     transform: rotateX(0);
@@ -720,7 +548,6 @@ footer ul li a:visited {
     transform: rotate(0);
   }
 }
-
 @keyframes turn {
   10% {
     transform: rotateX(0);
@@ -753,6 +580,7 @@ footer ul li a:visited {
     transform: rotate(0);
   }
 }
+/*loader:disparition le cube*/
 @-webkit-keyframes zindex {
   0% {
     opacity: 1;
@@ -791,88 +619,111 @@ footer ul li a:visited {
     width: 0%;
   }
 }
-@-webkit-keyframes display {
-  from {
-    z-index: -1;
-  }
-  to {
-    z-index: 4;
-  }
-}
-@keyframes display {
-  from {
-    z-index: -1;
-  }
-  to {
-    z-index: 4;
-  }
-}
-@-webkit-keyframes size_change {
-  from {
-    overflow: hidden;
-  }
-  to {
-    overflow: visible;
-  }
-}
-@keyframes size_change {
-  from {
-    overflow: hidden;
-  }
-  to {
-    overflow: visible;
-  }
-}
-@-webkit-keyframes scale {
-  from {
-    transform: scale(1) rotateY(0);
-  }
-  to {
-    transform: scale(0) rotateY(360deg);
-  }
-}
-@keyframes scale {
-  from {
-    transform: scale(1) rotateY(0);
-  }
-  to {
-    transform: scale(0) rotateY(360deg);
-  }
-}
+/*loader:change la visibilité du body*/
 @-webkit-keyframes body {
-  0% {
-    opacity: 0;
+  from {
+    overflow: hidden;
   }
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  to {
+    overflow: visible;
   }
 }
 @keyframes body {
-  0% {
-    opacity: 0;
+  from {
+    overflow: hidden;
   }
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  to {
+    overflow: visible;
   }
 }
+/*permet de bloquer la page sur le loader, en changeant les param$etre de 
+ body #index*/
+#index {
+  overflow: hidden;
+  -webkit-animation: body 0.01s 3.5s forwards;
+          animation: body 0.01s 3.5s forwards;
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: white;
+  background: radial-gradient(circle, white 0%, rgba(0, 0, 0, 0.7) 120%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  -webkit-animation: zindex 0.3s 2.5s forwards;
+          animation: zindex 0.3s 2.5s forwards;
+  /*animation faisant disparaître le cube*/
+}
+.loader .box_0_0 {
+  position: absolute;
+  font-size: 2em;
+  transform-style: preserve-3d;
+  margin-top: -2em;
+  margin-left: -2em;
+  text-align: center;
+  -webkit-animation: turn 2.5s 1 alternate;
+          animation: turn 2.5s 1 alternate;
+  font-size: 2em;
+  opacity: 1;
+  transform-origin: 2em 2em;
+  /*axe de rotation important*/
+}
+@media (max-width: 540px) {
+  .loader .box_0_0 {
+    font-size: 1em;
+  }
+}
+.loader .box_0_0 i {
+  color: #99E2D0;
+  font-size: 1.4em;
+}
+
+/*façonnage du cube*/
+.face {
+  width: 4em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /*important */
+  background: white;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+}
+
+/*chaque face a sa place*/
+.face_avant {
+  transform: translateZ(2em);
+}
+
+.face_dessous {
+  transform: rotateX(-90deg) translateZ(2em);
+}
+
+.face_dessus {
+  transform: rotateX(90deg) translateZ(2em);
+}
+
+.face_gauche {
+  transform: rotateY(90deg) translateZ(2em);
+}
+
+.face_droite {
+  transform: rotateY(-90deg) translateZ(2em);
+}
+
+.face_derriere {
+  transform: translateZ(-2em);
+}
+
+/*boucle pour animation coeur 
+lorsque le coeur vide est hover il disparait et le coeur plein apparaît*/
 #checked_1 {
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
@@ -887,35 +738,13 @@ footer ul li a:visited {
   z-index: 1;
   position: absolute;
 }
-@media (max-width: 540px) {
-  #unchecked_1:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_1:hover + #checked_1 {
-    -webkit-animation: fill_heart_1 500ms forwards;
-            animation: fill_heart_1 500ms forwards;
-  }
+#unchecked_1:hover {
+  -webkit-animation: fill_heart_2 10ms forwards;
+          animation: fill_heart_2 10ms forwards;
 }
-@media (min-width: 769px) {
-  #unchecked_1:hover {
-    -webkit-animation: fill_heart_2 300ms forwards;
-            animation: fill_heart_2 300ms forwards;
-  }
-  #unchecked_1:hover + #checked_1 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  #unchecked_1:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_1:hover + #checked_1 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
+#unchecked_1:hover + #checked_1 {
+  -webkit-animation: fill_heart_1 300ms forwards;
+          animation: fill_heart_1 300ms forwards;
 }
 
 #checked_2 {
@@ -932,35 +761,13 @@ footer ul li a:visited {
   z-index: 1;
   position: absolute;
 }
-@media (max-width: 540px) {
-  #unchecked_2:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_2:hover + #checked_2 {
-    -webkit-animation: fill_heart_1 500ms forwards;
-            animation: fill_heart_1 500ms forwards;
-  }
+#unchecked_2:hover {
+  -webkit-animation: fill_heart_2 10ms forwards;
+          animation: fill_heart_2 10ms forwards;
 }
-@media (min-width: 769px) {
-  #unchecked_2:hover {
-    -webkit-animation: fill_heart_2 300ms forwards;
-            animation: fill_heart_2 300ms forwards;
-  }
-  #unchecked_2:hover + #checked_2 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  #unchecked_2:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_2:hover + #checked_2 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
+#unchecked_2:hover + #checked_2 {
+  -webkit-animation: fill_heart_1 300ms forwards;
+          animation: fill_heart_1 300ms forwards;
 }
 
 #checked_3 {
@@ -977,35 +784,13 @@ footer ul li a:visited {
   z-index: 1;
   position: absolute;
 }
-@media (max-width: 540px) {
-  #unchecked_3:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_3:hover + #checked_3 {
-    -webkit-animation: fill_heart_1 500ms forwards;
-            animation: fill_heart_1 500ms forwards;
-  }
+#unchecked_3:hover {
+  -webkit-animation: fill_heart_2 10ms forwards;
+          animation: fill_heart_2 10ms forwards;
 }
-@media (min-width: 769px) {
-  #unchecked_3:hover {
-    -webkit-animation: fill_heart_2 300ms forwards;
-            animation: fill_heart_2 300ms forwards;
-  }
-  #unchecked_3:hover + #checked_3 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  #unchecked_3:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_3:hover + #checked_3 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
+#unchecked_3:hover + #checked_3 {
+  -webkit-animation: fill_heart_1 300ms forwards;
+          animation: fill_heart_1 300ms forwards;
 }
 
 #checked_4 {
@@ -1022,35 +807,13 @@ footer ul li a:visited {
   z-index: 1;
   position: absolute;
 }
-@media (max-width: 540px) {
-  #unchecked_4:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_4:hover + #checked_4 {
-    -webkit-animation: fill_heart_1 500ms forwards;
-            animation: fill_heart_1 500ms forwards;
-  }
+#unchecked_4:hover {
+  -webkit-animation: fill_heart_2 10ms forwards;
+          animation: fill_heart_2 10ms forwards;
 }
-@media (min-width: 769px) {
-  #unchecked_4:hover {
-    -webkit-animation: fill_heart_2 300ms forwards;
-            animation: fill_heart_2 300ms forwards;
-  }
-  #unchecked_4:hover + #checked_4 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  #unchecked_4:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_4:hover + #checked_4 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
+#unchecked_4:hover + #checked_4 {
+  -webkit-animation: fill_heart_1 300ms forwards;
+          animation: fill_heart_1 300ms forwards;
 }
 
 #checked_5 {
@@ -1067,35 +830,13 @@ footer ul li a:visited {
   z-index: 1;
   position: absolute;
 }
-@media (max-width: 540px) {
-  #unchecked_5:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_5:hover + #checked_5 {
-    -webkit-animation: fill_heart_1 500ms forwards;
-            animation: fill_heart_1 500ms forwards;
-  }
+#unchecked_5:hover {
+  -webkit-animation: fill_heart_2 10ms forwards;
+          animation: fill_heart_2 10ms forwards;
 }
-@media (min-width: 769px) {
-  #unchecked_5:hover {
-    -webkit-animation: fill_heart_2 300ms forwards;
-            animation: fill_heart_2 300ms forwards;
-  }
-  #unchecked_5:hover + #checked_5 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  #unchecked_5:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_5:hover + #checked_5 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
+#unchecked_5:hover + #checked_5 {
+  -webkit-animation: fill_heart_1 300ms forwards;
+          animation: fill_heart_1 300ms forwards;
 }
 
 #checked_6 {
@@ -1112,35 +853,13 @@ footer ul li a:visited {
   z-index: 1;
   position: absolute;
 }
-@media (max-width: 540px) {
-  #unchecked_6:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_6:hover + #checked_6 {
-    -webkit-animation: fill_heart_1 500ms forwards;
-            animation: fill_heart_1 500ms forwards;
-  }
+#unchecked_6:hover {
+  -webkit-animation: fill_heart_2 10ms forwards;
+          animation: fill_heart_2 10ms forwards;
 }
-@media (min-width: 769px) {
-  #unchecked_6:hover {
-    -webkit-animation: fill_heart_2 300ms forwards;
-            animation: fill_heart_2 300ms forwards;
-  }
-  #unchecked_6:hover + #checked_6 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  #unchecked_6:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_6:hover + #checked_6 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
+#unchecked_6:hover + #checked_6 {
+  -webkit-animation: fill_heart_1 300ms forwards;
+          animation: fill_heart_1 300ms forwards;
 }
 
 #checked_7 {
@@ -1157,35 +876,13 @@ footer ul li a:visited {
   z-index: 1;
   position: absolute;
 }
-@media (max-width: 540px) {
-  #unchecked_7:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_7:hover + #checked_7 {
-    -webkit-animation: fill_heart_1 500ms forwards;
-            animation: fill_heart_1 500ms forwards;
-  }
+#unchecked_7:hover {
+  -webkit-animation: fill_heart_2 10ms forwards;
+          animation: fill_heart_2 10ms forwards;
 }
-@media (min-width: 769px) {
-  #unchecked_7:hover {
-    -webkit-animation: fill_heart_2 300ms forwards;
-            animation: fill_heart_2 300ms forwards;
-  }
-  #unchecked_7:hover + #checked_7 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  #unchecked_7:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_7:hover + #checked_7 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
+#unchecked_7:hover + #checked_7 {
+  -webkit-animation: fill_heart_1 300ms forwards;
+          animation: fill_heart_1 300ms forwards;
 }
 
 #checked_8 {
@@ -1202,59 +899,39 @@ footer ul li a:visited {
   z-index: 1;
   position: absolute;
 }
-@media (max-width: 540px) {
-  #unchecked_8:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_8:hover + #checked_8 {
-    -webkit-animation: fill_heart_1 500ms forwards;
-            animation: fill_heart_1 500ms forwards;
-  }
+#unchecked_8:hover {
+  -webkit-animation: fill_heart_2 10ms forwards;
+          animation: fill_heart_2 10ms forwards;
 }
-@media (min-width: 769px) {
-  #unchecked_8:hover {
-    -webkit-animation: fill_heart_2 300ms forwards;
-            animation: fill_heart_2 300ms forwards;
-  }
-  #unchecked_8:hover + #checked_8 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  #unchecked_8:hover {
-    -webkit-animation: fill_heart_2 10ms forwards;
-            animation: fill_heart_2 10ms forwards;
-  }
-  #unchecked_8:hover + #checked_8 {
-    -webkit-animation: fill_heart_1 300ms forwards;
-            animation: fill_heart_1 300ms forwards;
-  }
+#unchecked_8:hover + #checked_8 {
+  -webkit-animation: fill_heart_1 300ms forwards;
+          animation: fill_heart_1 300ms forwards;
 }
 
-.part2 {
+/*container d'accueil*/
+.part_accueil {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   text-align: center;
   box-sizing: border-box;
   padding-bottom: 1.5em;
+  /*champ de localisation*/
+  /*partie texte*/
 }
 @media (min-width: 769px) {
-  .part2 {
+  .part_accueil {
     width: 80%;
     transform: translateX(12%);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 }
 @media (min-width: 769px) {
-  .part2 {
+  .part_accueil {
     border-radius: 1.25em;
   }
 }
-
-.localisation {
+.part_accueil .localisation {
   background-color: #e4e4e4;
   display: flex;
   box-sizing: border-box;
@@ -1266,23 +943,25 @@ footer ul li a:visited {
   box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.8);
 }
 @media (min-width: 769px) {
-  .localisation {
+  .part_accueil .localisation {
     border-radius: 1.25em 1.25em 0 0;
   }
 }
-
-.accueil_decouverte {
+.part_accueil .accueil_decouverte {
   margin-top: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/*fonctionnement de la plateforme*/
 .fonctionnement {
   margin-top: 2em;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /*titre*/
+  /*cadre fonctionnement*/
 }
 .fonctionnement h3 {
   width: 90%;
@@ -1305,14 +984,156 @@ footer ul li a:visited {
     background: linear-gradient(#ff79da 0%, #9356dc 100%);
   }
 }
-
-.container_fonctionnement {
+.fonctionnement .container_fonctionnement {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
+  /*bouton de fonctionnement*/
+}
+.fonctionnement .container_fonctionnement .btn_fonction_choix {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3em;
+  height: 4em;
+  margin-bottom: 2em;
+  box-shadow: 0em 0.1em 0.5em;
+  border-radius: 1.25em;
+  width: 40%;
+  align-items: center;
+  background-color: #f2f2f2;
+  -webkit-animation: fadein_left 1.5s 2.7s forwards;
+          animation: fadein_left 1.5s 2.7s forwards;
+}
+@media (max-width: 540px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_choix {
+    -webkit-animation: fadein_fonction_mobile 1s;
+            animation: fadein_fonction_mobile 1s;
+    width: 85%;
+    gap: 1.5em;
+  }
+}
+.fonctionnement .container_fonctionnement .btn_fonction_choix i {
+  color: #808080;
+}
+@media (min-width: 541px) and (max-width: 769px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_choix {
+    width: 45%;
+  }
+  .fonctionnement .container_fonctionnement .btn_fonction_choix:active {
+    background: #bfa7dd;
+    opacity: 0.4;
+  }
+}
+@media (max-width: 540px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_choix:active {
+    background: #bfa7dd;
+    opacity: 0.4;
+  }
+}
+@media (min-width: 769px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_choix:hover {
+    background: #bfa7dd;
+    opacity: 0.4;
+    transition-duration: 300ms;
+  }
+}
+.fonctionnement .container_fonctionnement .btn_fonction_composition {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3em;
+  height: 4em;
+  margin-bottom: 2em;
+  box-shadow: 0em 0.1em 0.5em;
+  border-radius: 1.25em;
+  width: 40%;
+  align-items: center;
+  background-color: #f2f2f2;
+  -webkit-animation: fadein_center 1.5s 2.7s;
+          animation: fadein_center 1.5s 2.7s;
+}
+@media (max-width: 540px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_composition {
+    -webkit-animation: fadein_fonction_mobile 1s;
+            animation: fadein_fonction_mobile 1s;
+    width: 85%;
+    gap: 1.5em;
+  }
+}
+.fonctionnement .container_fonctionnement .btn_fonction_composition i {
+  color: #808080;
+}
+@media (min-width: 541px) and (max-width: 769px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_composition {
+    width: 45%;
+  }
+  .fonctionnement .container_fonctionnement .btn_fonction_composition:active {
+    background: #bfa7dd;
+    opacity: 0.4;
+  }
+}
+@media (max-width: 540px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_composition:active {
+    background: #bfa7dd;
+    opacity: 0.4;
+  }
+}
+@media (min-width: 769px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_composition:hover {
+    background: #bfa7dd;
+    opacity: 0.4;
+    transition-duration: 300ms;
+  }
+}
+.fonctionnement .container_fonctionnement .btn_fonction_degustation {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3em;
+  height: 4em;
+  margin-bottom: 2em;
+  box-shadow: 0em 0.1em 0.5em;
+  border-radius: 1.25em;
+  width: 40%;
+  align-items: center;
+  background-color: #f2f2f2;
+  -webkit-animation: fadein_right 1.5s 2.7s forwards;
+          animation: fadein_right 1.5s 2.7s forwards;
+}
+@media (max-width: 540px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_degustation {
+    -webkit-animation: fadein_fonction_mobile 1s;
+            animation: fadein_fonction_mobile 1s;
+    width: 85%;
+    gap: 1.5em;
+  }
+}
+.fonctionnement .container_fonctionnement .btn_fonction_degustation i {
+  color: #808080;
+}
+@media (min-width: 541px) and (max-width: 769px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_degustation {
+    width: 45%;
+  }
+  .fonctionnement .container_fonctionnement .btn_fonction_degustation:active {
+    background: #bfa7dd;
+    opacity: 0.4;
+  }
+}
+@media (max-width: 540px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_degustation:active {
+    background: #bfa7dd;
+    opacity: 0.4;
+  }
+}
+@media (min-width: 769px) {
+  .fonctionnement .container_fonctionnement .btn_fonction_degustation:hover {
+    background: #bfa7dd;
+    opacity: 0.4;
+    transition-duration: 300ms;
+  }
 }
 
+/*numéro des btn fonctionnemement*/
 span.position {
   border-radius: 100%;
   background-color: #9356DC;
@@ -1324,7 +1145,7 @@ span.position {
   margin-left: -0.9em;
 }
 
-/***page d'accueil liste des restaurant***/
+/***liste des restaurant index***/
 .container_restaurant {
   perspective: 1000px;
   box-sizing: border-box;
@@ -1335,6 +1156,7 @@ span.position {
   align-items: center;
   margin-top: 3em;
   padding-bottom: 4em;
+  /*cadre contenant les présentatin de resto*/
 }
 @media (min-width: 769px) {
   .container_restaurant {
@@ -1360,48 +1182,35 @@ span.position {
     background: #f2f2f2;
   }
 }
-
-.restaurant_wrapper {
-  transform-style: preserve-3d;
+.container_restaurant .restaurant_wrapper {
   box-sizing: border-box;
   width: 95%;
-  -webkit-animation: swirl 7s infinite ease-in;
-          animation: swirl 7s infinite ease-in;
+  transform-style: preserve-3d;
+  /*important carroussel*/
   transform-origin: center 6em;
+  /*important pour axe de rotation du carroussel*/
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  gap: 2em;
 }
 @media (min-width: 769px) {
-  .restaurant_wrapper {
+  .container_restaurant .restaurant_wrapper {
     height: 1000px;
+    /*hauteur important pour carrousel*/
     width: 65%;
     margin-top: 4em;
+    -webkit-animation: swirl 7s infinite ease-in;
+            animation: swirl 7s infinite ease-in;
+  }
+  .container_restaurant .restaurant_wrapper:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    /*pause animation desktop*/
   }
 }
-.restaurant_wrapper:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-@media (max-width: 540px) {
-  .restaurant_wrapper {
-    -webkit-animation: none;
-            animation: none;
-    gap: 2em;
-    height: 100%;
-  }
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  .restaurant_wrapper {
-    -webkit-animation: none;
-            animation: none;
-    gap: 2em;
-    height: 100%;
-  }
-}
-
-.box_resto_1 {
+.container_restaurant .restaurant_wrapper .box_resto_1 {
   box-sizing: border-box;
   width: 90%;
   height: 15em;
@@ -1409,23 +1218,20 @@ span.position {
   flex-direction: column;
   border-radius: 1.25em;
   background: white;
-  position: absolute;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  transform: rotateX(0deg) translateZ(7.5em);
+  /*important pour carrousel*/
 }
-@media (max-width: 540px) {
-  .box_resto_1 {
-    transform: none;
-    position: relative;
+@media (min-width: 769px) {
+  .container_restaurant .restaurant_wrapper .box_resto_1 {
+    position: absolute;
   }
 }
-@media (min-width: 541px) and (max-width: 769px) {
-  .box_resto_1 {
-    transform: none;
-    position: relative;
+@media (min-width: 769px) {
+  .container_restaurant .restaurant_wrapper .box_resto_1 {
+    transform: rotateX(0deg) translateZ(7.5em);
   }
 }
-.box_resto_2 {
+.container_restaurant .restaurant_wrapper .box_resto_2 {
   box-sizing: border-box;
   width: 90%;
   height: 15em;
@@ -1433,23 +1239,20 @@ span.position {
   flex-direction: column;
   border-radius: 1.25em;
   background: white;
-  position: absolute;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  transform: rotateX(90deg) translateZ(7.5em);
+  /*important pour carrousel*/
 }
-@media (max-width: 540px) {
-  .box_resto_2 {
-    transform: none;
-    position: relative;
+@media (min-width: 769px) {
+  .container_restaurant .restaurant_wrapper .box_resto_2 {
+    position: absolute;
   }
 }
-@media (min-width: 541px) and (max-width: 769px) {
-  .box_resto_2 {
-    transform: none;
-    position: relative;
+@media (min-width: 769px) {
+  .container_restaurant .restaurant_wrapper .box_resto_2 {
+    transform: rotateX(90deg) translateZ(7.5em);
   }
 }
-.box_resto_3 {
+.container_restaurant .restaurant_wrapper .box_resto_3 {
   box-sizing: border-box;
   width: 90%;
   height: 15em;
@@ -1457,23 +1260,20 @@ span.position {
   flex-direction: column;
   border-radius: 1.25em;
   background: white;
-  position: absolute;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  transform: rotateX(180deg) translateZ(7.5em);
+  /*important pour carrousel*/
 }
-@media (max-width: 540px) {
-  .box_resto_3 {
-    transform: none;
-    position: relative;
+@media (min-width: 769px) {
+  .container_restaurant .restaurant_wrapper .box_resto_3 {
+    position: absolute;
   }
 }
-@media (min-width: 541px) and (max-width: 769px) {
-  .box_resto_3 {
-    transform: none;
-    position: relative;
+@media (min-width: 769px) {
+  .container_restaurant .restaurant_wrapper .box_resto_3 {
+    transform: rotateX(180deg) translateZ(7.5em);
   }
 }
-.box_resto_4 {
+.container_restaurant .restaurant_wrapper .box_resto_4 {
   box-sizing: border-box;
   width: 90%;
   height: 15em;
@@ -1481,46 +1281,41 @@ span.position {
   flex-direction: column;
   border-radius: 1.25em;
   background: white;
-  position: absolute;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  transform: rotateX(270deg) translateZ(7.5em);
+  /*important pour carrousel*/
 }
-@media (max-width: 540px) {
-  .box_resto_4 {
-    transform: none;
-    position: relative;
+@media (min-width: 769px) {
+  .container_restaurant .restaurant_wrapper .box_resto_4 {
+    position: absolute;
   }
 }
-@media (min-width: 541px) and (max-width: 769px) {
-  .box_resto_4 {
-    transform: none;
-    position: relative;
+@media (min-width: 769px) {
+  .container_restaurant .restaurant_wrapper .box_resto_4 {
+    transform: rotateX(270deg) translateZ(7.5em);
   }
 }
-
-.box_resto_nom_lieu_heart {
+.container_restaurant .restaurant_wrapper .box_resto_nom_lieu_heart {
   display: flex;
   justify-content: space-between;
   height: 4em;
 }
-.box_resto_nom_lieu {
+.container_restaurant .restaurant_wrapper .box_resto_nom_lieu {
   display: flex;
   flex-direction: column;
   padding-left: 0.5em;
   margin-top: 0.5em;
   gap: 0.2em;
 }
-.box_resto_nom {
+.container_restaurant .restaurant_wrapper .box_resto_nom {
   font-weight: bold;
 }
-.box_resto_heart {
+.container_restaurant .restaurant_wrapper .box_resto_heart {
   padding-right: 1em;
   align-self: center;
   font-size: 1.5em;
   color: #808080;
 }
-
-img {
+.container_restaurant .restaurant_wrapper img {
   box-sizing: border-box;
   width: 100%;
   height: 11em;
@@ -1529,8 +1324,7 @@ img {
   overflow: hidden;
   border-radius: 1.25em 1.25em 0 0;
 }
-
-.cadre_new {
+.container_restaurant .restaurant_wrapper .cadre_new {
   position: absolute;
   transform: translateX(-130%) translateY(80%);
   background: #99E2D0;
@@ -1556,6 +1350,7 @@ img {
   z-index: 2;
   border-radius: 1.25em 1.25em 0 0;
   background: #f2f2f2;
+  /*partie mise en page*/
 }
 @media (min-width: 769px) {
   .menu {
@@ -1566,8 +1361,6 @@ img {
     font-size: 1em;
     opacity: 0.95;
     transform: translateX(22%);
-    -webkit-animation: menu 2s;
-            animation: menu 2s;
   }
 }
 @media (min-width: 541px) and (max-width: 769px) {
@@ -1579,8 +1372,7 @@ img {
     transform: translateX(12%);
   }
 }
-
-.entree_1 {
+.menu .entree_1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1597,27 +1389,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.entree_1:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .entree_1:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.entree_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .entree_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.entree_1:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .entree_1:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.entree_1:hover > .part_nom_commentaire > .plat_nom {
+.menu .entree_1:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.entree_1:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .entree_1:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.entree_2 {
+.menu .entree_2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1634,27 +1426,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.entree_2:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .entree_2:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.entree_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .entree_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.entree_2:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .entree_2:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.entree_2:hover > .part_nom_commentaire > .plat_nom {
+.menu .entree_2:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.entree_2:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .entree_2:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.entree_3 {
+.menu .entree_3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1671,27 +1463,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 200ms forwards;
           animation: fadeinmenu 400ms 200ms forwards;
 }
-.entree_3:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .entree_3:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.entree_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .entree_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.entree_3:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .entree_3:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.entree_3:hover > .part_nom_commentaire > .plat_nom {
+.menu .entree_3:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.entree_3:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .entree_3:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.entree_4 {
+.menu .entree_4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1708,28 +1500,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 100ms forwards;
           animation: fadeinmenu 400ms 100ms forwards;
 }
-.entree_4:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .entree_4:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.entree_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .entree_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.entree_4:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .entree_4:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.entree_4:hover > .part_nom_commentaire > .plat_nom {
+.menu .entree_4:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.entree_4:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .entree_4:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-
-.plat_1 {
+.menu .plat_1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1746,27 +1537,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.plat_1:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .plat_1:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.plat_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .plat_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.plat_1:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .plat_1:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.plat_1:hover > .part_nom_commentaire > .plat_nom {
+.menu .plat_1:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.plat_1:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .plat_1:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.plat_2 {
+.menu .plat_2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1783,27 +1574,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.plat_2:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .plat_2:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.plat_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .plat_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.plat_2:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .plat_2:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.plat_2:hover > .part_nom_commentaire > .plat_nom {
+.menu .plat_2:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.plat_2:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .plat_2:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.plat_3 {
+.menu .plat_3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1820,27 +1611,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 200ms forwards;
           animation: fadeinmenu 400ms 200ms forwards;
 }
-.plat_3:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .plat_3:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.plat_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .plat_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.plat_3:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .plat_3:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.plat_3:hover > .part_nom_commentaire > .plat_nom {
+.menu .plat_3:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.plat_3:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .plat_3:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.plat_4 {
+.menu .plat_4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1857,28 +1648,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 100ms forwards;
           animation: fadeinmenu 400ms 100ms forwards;
 }
-.plat_4:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .plat_4:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.plat_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .plat_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.plat_4:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .plat_4:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.plat_4:hover > .part_nom_commentaire > .plat_nom {
+.menu .plat_4:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.plat_4:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .plat_4:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-
-.dessert_1 {
+.menu .dessert_1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1895,27 +1685,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.dessert_1:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .dessert_1:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.dessert_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .dessert_1:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.dessert_1:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .dessert_1:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.dessert_1:hover > .part_nom_commentaire > .plat_nom {
+.menu .dessert_1:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.dessert_1:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .dessert_1:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.dessert_2 {
+.menu .dessert_2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1932,27 +1722,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 300ms forwards;
           animation: fadeinmenu 400ms 300ms forwards;
 }
-.dessert_2:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .dessert_2:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.dessert_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .dessert_2:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.dessert_2:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .dessert_2:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.dessert_2:hover > .part_nom_commentaire > .plat_nom {
+.menu .dessert_2:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.dessert_2:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .dessert_2:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.dessert_3 {
+.menu .dessert_3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1969,27 +1759,27 @@ img {
   -webkit-animation: fadeinmenu 400ms 200ms forwards;
           animation: fadeinmenu 400ms 200ms forwards;
 }
-.dessert_3:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .dessert_3:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.dessert_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .dessert_3:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.dessert_3:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .dessert_3:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.dessert_3:hover > .part_nom_commentaire > .plat_nom {
+.menu .dessert_3:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.dessert_3:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .dessert_3:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-.dessert_4 {
+.menu .dessert_4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2006,73 +1796,33 @@ img {
   -webkit-animation: fadeinmenu 400ms 100ms forwards;
           animation: fadeinmenu 400ms 100ms forwards;
 }
-.dessert_4:hover > .part_tarif_box_achat > .plat_box_achat {
+.menu .dessert_4:hover > .part_tarif_box_achat > .plat_box_achat {
   -webkit-animation: box_achat 600ms ease forwards;
           animation: box_achat 600ms ease forwards;
 }
-.dessert_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
+.menu .dessert_4:hover > .part_tarif_box_achat > .plat_box_achat > i {
   -webkit-animation: icone_check 600ms ease forwards;
           animation: icone_check 600ms ease forwards;
 }
-.dessert_4:hover > .part_tarif_box_achat > .plat_tarif {
+.menu .dessert_4:hover > .part_tarif_box_achat > .plat_tarif {
   -webkit-animation: tarif 600ms ease forwards;
           animation: tarif 600ms ease forwards;
 }
-.dessert_4:hover > .part_nom_commentaire > .plat_nom {
+.menu .dessert_4:hover > .part_nom_commentaire > .plat_nom {
   -webkit-animation: nom_plat 600ms ease forwards;
           animation: nom_plat 600ms ease forwards;
 }
-.dessert_4:hover > .part_nom_commentaire > .plat_commentaire {
+.menu .dessert_4:hover > .part_nom_commentaire > .plat_commentaire {
   -webkit-animation: commentaire 600ms ease forwards;
           animation: commentaire 600ms ease forwards;
 }
-
-.plat_nom {
-  font-weight: bold;
-  font-size: 1.1em;
-  width: 75%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.plat_commentaire {
-  margin-top: 0.3em;
-  font-size: 0.86em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 73%;
-}
-.plat_tarif {
-  position: sticky;
-  font-weight: bold;
-  margin-top: 2em;
-  transform: translateX(180%);
-}
-.plat_box_achat {
-  width: 0em;
-  height: 4em;
-  box-sizing: border-box;
-  background-color: #99E2D0;
-  color: #99E2D0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0 1.25em 1.25em 0;
-}
-.plat_box_achat i {
-  font-size: 2em;
-  color: white;
-  opacity: 0;
-}
-
-.part_nom_commentaire {
+.menu .part_nom_commentaire {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-left: 0.5em;
 }
-
-.part_tarif_box_achat {
+.menu .part_tarif_box_achat {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2084,18 +1834,50 @@ img {
   border-radius: 0 1.25em 1.25em 0;
   right: 2%;
 }
-@media (min-width: 769px) {
-  .part_tarif_box_achat {
-    right: 2%;
-  }
+.menu .plat_nom {
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 75%;
+  overflow: hidden;
+  /*important animation point de suspension*/
+  text-overflow: ellipsis;
+  /*important animation point de suspension*/
 }
-@media (min-width: 541px) and (max-width: 769px) {
-  .part_tarif_box_achat {
-    right: 2%;
-  }
+.menu .plat_commentaire {
+  margin-top: 0.3em;
+  font-size: 0.86em;
+  white-space: nowrap;
+  overflow: hidden;
+  /*important animation point de suspension*/
+  text-overflow: ellipsis;
+  /*important animation point de suspension*/
+  width: 73%;
 }
-
-div.commande {
+.menu .plat_tarif {
+  position: sticky;
+  font-weight: bold;
+  margin-top: 2em;
+  transform: translateX(180%);
+}
+.menu .plat_box_achat {
+  width: 0em;
+  height: 4em;
+  box-sizing: border-box;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 1.25em 1.25em 0;
+}
+.menu .plat_box_achat i {
+  /*important icone check animation*/
+  font-size: 2em;
+  color: white;
+  opacity: 0;
+}
+.menu .commande {
+  /*cadre du bouton commande*/
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -2105,6 +1887,7 @@ div.commande {
   margin-top: 5em;
 }
 
+/*cloture menu*/
 .btn-exploration {
   display: flex;
   justify-content: center;
@@ -2115,8 +1898,6 @@ div.commande {
   width: 30%;
   margin-bottom: 1.5em;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  -webkit-animation: btn 1s 8s;
-          animation: btn 1s 8s;
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   cursor: pointer;
@@ -2147,8 +1928,6 @@ div.commande {
   width: 30%;
   margin-bottom: 1.5em;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  -webkit-animation: btn 1s 8s;
-          animation: btn 1s 8s;
   background: white;
   background: linear-gradient(#ff79da 0%, #9356dc 100%);
   cursor: pointer;
@@ -2165,151 +1944,4 @@ div.commande {
 }
 .btn-cmd:active {
   transform: scale(1.05);
-}
-
-.btn_fonction_choix {
-  display: flex;
-  justify-content: flex-start;
-  gap: 3em;
-  height: 4em;
-  margin-bottom: 2em;
-  box-shadow: 0em 0.1em 0.5em;
-  border-radius: 1.25em;
-  width: 40%;
-  align-items: center;
-  background-color: #f2f2f2;
-  -webkit-animation: fadein_left 1.5s 2.7s forwards;
-          animation: fadein_left 1.5s 2.7s forwards;
-}
-@media (max-width: 540px) {
-  .btn_fonction_choix {
-    -webkit-animation: fadein_fonction_mobile 1s;
-            animation: fadein_fonction_mobile 1s;
-    width: 85%;
-    gap: 1.5em;
-  }
-}
-.btn_fonction_choix i {
-  color: #808080;
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  .btn_fonction_choix {
-    width: 45%;
-  }
-  .btn_fonction_choix:active {
-    background: #bfa7dd;
-    opacity: 0.4;
-  }
-}
-@media (max-width: 540px) {
-  .btn_fonction_choix:active {
-    background: #bfa7dd;
-    opacity: 0.4;
-  }
-}
-@media (min-width: 769px) {
-  .btn_fonction_choix:hover {
-    background: #bfa7dd;
-    opacity: 0.4;
-    transition-duration: 300ms;
-  }
-}
-.btn_fonction_composition {
-  display: flex;
-  justify-content: flex-start;
-  gap: 3em;
-  height: 4em;
-  margin-bottom: 2em;
-  box-shadow: 0em 0.1em 0.5em;
-  border-radius: 1.25em;
-  width: 40%;
-  align-items: center;
-  background-color: #f2f2f2;
-  -webkit-animation: fadein_center 1.5s 2.7s;
-          animation: fadein_center 1.5s 2.7s;
-}
-@media (max-width: 540px) {
-  .btn_fonction_composition {
-    -webkit-animation: fadein_fonction_mobile 1s;
-            animation: fadein_fonction_mobile 1s;
-    width: 85%;
-    gap: 1.5em;
-  }
-}
-.btn_fonction_composition i {
-  color: #808080;
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  .btn_fonction_composition {
-    width: 45%;
-  }
-  .btn_fonction_composition:active {
-    background: #bfa7dd;
-    opacity: 0.4;
-  }
-}
-@media (max-width: 540px) {
-  .btn_fonction_composition:active {
-    background: #bfa7dd;
-    opacity: 0.4;
-  }
-}
-@media (min-width: 769px) {
-  .btn_fonction_composition:hover {
-    background: #bfa7dd;
-    opacity: 0.4;
-    transition-duration: 300ms;
-  }
-}
-.btn_fonction_degustation {
-  display: flex;
-  justify-content: flex-start;
-  gap: 3em;
-  height: 4em;
-  margin-bottom: 2em;
-  box-shadow: 0em 0.1em 0.5em;
-  border-radius: 1.25em;
-  width: 40%;
-  align-items: center;
-  background-color: #f2f2f2;
-  -webkit-animation: fadein_right 1.5s 2.7s forwards;
-          animation: fadein_right 1.5s 2.7s forwards;
-}
-@media (max-width: 540px) {
-  .btn_fonction_degustation {
-    -webkit-animation: fadein_fonction_mobile 1s;
-            animation: fadein_fonction_mobile 1s;
-    width: 85%;
-    gap: 1.5em;
-  }
-}
-.btn_fonction_degustation i {
-  color: #808080;
-}
-@media (min-width: 541px) and (max-width: 769px) {
-  .btn_fonction_degustation {
-    width: 45%;
-  }
-  .btn_fonction_degustation:active {
-    background: #bfa7dd;
-    opacity: 0.4;
-  }
-}
-@media (max-width: 540px) {
-  .btn_fonction_degustation:active {
-    background: #bfa7dd;
-    opacity: 0.4;
-  }
-}
-@media (min-width: 769px) {
-  .btn_fonction_degustation:hover {
-    background: #bfa7dd;
-    opacity: 0.4;
-    transition-duration: 300ms;
-  }
-}
-
-.far fa-heart {
-  background: white;
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
 }/*# sourceMappingURL=style.css.map */

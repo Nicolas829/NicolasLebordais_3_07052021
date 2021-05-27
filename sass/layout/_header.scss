@@ -1,10 +1,11 @@
+/*logo page index*/
 .logo_accueil {
 
     display:flex;
     justify-content: center;
 }
 
-
+/*logo page restaurant*/
 .logo_pages {
     display: flex;
     justify-content: space-between;
@@ -40,9 +41,8 @@
     }
 }
 
-div.photo_resto {  
-
-    
+/*photo restaurant pour pages restaurant*/
+div.photo_resto {    
   
     img {
         z-index:0;

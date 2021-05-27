@@ -11,29 +11,7 @@
    
 }
 
-.btn_fonction {
 
-    &_choix {
-        @include container_fonctionnement;       
-        animation:fadein_left 1.5s 2.7s forwards ;      
-    }
-    &_composition {
-              
-        @include container_fonctionnement;        
-        animation:fadein_center 1.5s 2.7s ;
-            
-    }
 
-    &_degustation {
-        @include container_fonctionnement;
-        animation:fadein_right 1.5s 2.7s forwards;
-        
-    }
-       
-    
-}
 
-.far fa-heart {
-    @include color-secondary-gradiant;
-}
 

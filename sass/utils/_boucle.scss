@@ -1,8 +1,10 @@
-@for $i from 1 through 8 {
 
+
+/*boucle pour animation coeur 
+lorsque le coeur vide est hover il disparait et le coeur plein apparaît*/
+@for $i from 1 through 8 {
     #checked_#{$i} {   
-        @include color-secondary-gradiant;
-        
+        @include color-secondary-gradiant;        
         -webkit-background-clip:text;
         -webkit-text-fill-color: transparent;   
         opacity:0;
@@ -11,34 +13,19 @@
     }
     #unchecked_#{$i}    {
         z-index:1;
-       position:absolute;
-       
-       @include mobile {
-        &:hover {
-            animation:fill_heart_2 10ms forwards ;
-        }
-        &:hover + #checked_#{$i}{
-           animation:fill_heart_1 500ms forwards;
-                        
-        }}
+       position:absolute;       
+             &:hover {
+                animation:fill_heart_2 10ms forwards ;
+             }
+            &:hover + #checked_#{$i}{
+                animation:fill_heart_1 300ms forwards;
+            }           
+    }
+}   
 
-        @include desktop {
-            &:hover {
-                animation:fill_heart_2  300ms forwards;}
-            &:hover + #checked_#{$i}{
-                animation:fill_heart_1 300ms forwards;
-                             
-             }
-        }
-        @include tablette {
-            &:hover {
-                animation:fill_heart_2  10ms forwards;}
-            &:hover + #checked_#{$i}{
-                animation:fill_heart_1 300ms forwards;
-                             
-             }
-        }
         
-    }}
+        
+        
+    
 
     
